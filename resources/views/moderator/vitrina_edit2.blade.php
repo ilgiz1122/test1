@@ -212,7 +212,7 @@ color1
                                     <div class="col p-0 mt-1">
                                         <div id="image-holder2" class="img_hide" style="border-radius: 4px;">
                                             @foreach ($vitrinaimgs as $vitrinaimg)
-                                                <img src="{{ asset('public/storage/vitrina/img2/') }}/{{$vitrinaimg->img2}}" class="for_upload_img border shadow-sm m-2" style="border-radius: 4px;">
+                                                <img src="{{ asset('/storage/vitrina/img2/') }}/{{$vitrinaimg->img2}}" class="for_upload_img border shadow-sm m-2" style="border-radius: 4px;">
                                             @endforeach
                                         </div>
                                     </div>

@@ -51,7 +51,7 @@
                             <div class="col-4 text-center">
                                 <label class="p-0 m-0" for="rebate_image1">
                                     @if(Auth::user()->img_600_600 != null)
-                                        <img id="rebate_old_image1" class="mb-0 mt-3 img-circle" src="{{ asset('public/storage/users/img_600_600/') }}/{{Auth::user()->img_600_600}}" style="width: 100%;" type="button" title="Нажмите чтобы загрузить картинку">
+                                        <img id="rebate_old_image1" class="mb-0 mt-3 img-circle" src="{{ asset('/storage/users/img_600_600/') }}/{{Auth::user()->img_600_600}}" style="width: 100%;" type="button" title="Нажмите чтобы загрузить картинку">
                                     @else
                                         <img id="rebate_old_image1" class="mb-0 mt-3" src="{{asset('')}}/admin/dist/img/user_plus1.png" style="width: 100%;" type="button" title="Нажмите чтобы загрузить картинку">
                                     @endif

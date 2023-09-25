@@ -22,11 +22,11 @@
 @endsection
 
 @section('img100_100')
-    {{ asset('public/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
+    {{ asset('/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
 @endsection
 
 @section('img480')
-    {{ asset('public/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
+    {{ asset('/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
 @endsection
 
 @section('content')
@@ -645,7 +645,7 @@
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.20/autosize.js"></script>
-        <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/pages/accordion/accordion.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/portfolio/files/assets/pages/accordion/accordion.js') }}"></script>
         <script>
           
             
@@ -902,7 +902,7 @@
                             $("#next_cat").append(
                                 '<div id="next_cat_1"> <h5 class="mb-5 mt-30"><b>Кайсыл аймактан чыгасыз? <span  style="color: #e32;">*</span></b></h5> <div class="row align-items-center chykkan_aimak cat m-0"> <div class="col p-0 cat_title2">Аймакты тандаңыз</div> <div class="col-auto p-0"><i class="fas fa-chevron-down"></i></div> </div> <h5 class="mb-5 mt-30"><b>Кайсыл аймакка барасыз? <span  style="color: #e32;">*</span></b></h5> <div class="row align-items-center barchu_aimak cat m-0"> <div class="col p-0 cat_title3">Аймакты тандаңыз</div> <div class="col-auto p-0"><i class="fas fa-chevron-down"></i></div> </div> <div class="row mt-30"> <div class="col-7 pr-10"> <h5 class="mb-5"><b>Жолго чыгуу датасы <span  style="color: #e32;">*</span></b></h5> @php $d = strtotime('+1 day'); $data = date('Y-m-d', $d); @endphp <input class="cat 1_data pl-5 pr-0" type="date" value="{{ $data }}" name="data"> </div> <div class="col-5 pl-10"> <h5 class="mb-5"><b>Баасы</b></h5> <input name="price" type="number" class="cat pl-15 pr-15" placeholder="" value="" autocomplete="off" style="letter-spacing: 1px;"> </div> </div> <p class="mb-0 mt-10 text-right"><small class="text-muted" style="font-size: 12px;">- баа келишим түрдө болсо, анда бош калтырыңыз</small></p> <div class="modal fade modal_plus2" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg m-0"> <div class="modal-content"> <div class="modal-header"> <h5 class="modal-title" id="exampleModalLabel2">Кайсыл аймактан чыгасыз?</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"> <i class="fas fa-times"></i></span> </button> </div> <div class="modal-body pt-5"> <div class="form-radio"> <div class="card-block accordion-block color-accordion-block"> <div class="color-accordion" id="color-accordion"> @foreach ($oblast_taxis as $oblast_taxi) <a class="accordion-msg b-none waves-effect waves-light pt-15 pb-15" data-id="{{ $oblast_taxi->id }}"> {{ $oblast_taxi->oblast }} </a> <div class="accordion-desc ml-30 mt-0 pb-0 pr-0"> @php $taxi_raion1 = $taxi_raions->where('poputka_taxi_oblasts_id', $oblast_taxi->id); @endphp <div class="form-radio"> @foreach ($taxi_raion1 as $taxi_rai) <div class="radio radio-inline mr-0"> <label class="cat_close_2 mt-10" data-title="{{ $taxi_rai->raion_shaar }}"> <input type="radio" name="chykkan_aimak" value="{{ $taxi_rai->id }}" required> <i class="helper"></i>{{ $taxi_rai->raion_shaar }} </label> </div> @endforeach </div> </div> @endforeach </div> </div> </div> </div> </div> </div> </div> <div class="modal fade modal_plus3" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg m-0"> <div class="modal-content"> <div class="modal-header"> <h5 class="modal-title" id="exampleModalLabel3">Кайсыл аймакка барасыз?</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"> <i class="fas fa-times"></i></span> </button> </div> <div class="modal-body pt-5"> <div class="form-radio"> <div class="card-block accordion-block color-accordion-block"> <div class="color-accordion" id="single-open"> @foreach ($oblast_taxis as $oblast_taxi) <a class="accordion-msg b-none waves-effect waves-light pt-15 pb-15" data-id="{{ $oblast_taxi->id }}"> {{ $oblast_taxi->oblast }} </a> <div class="accordion-desc ml-30 mt-0 pb-0 pr-0"> @php $taxi_raion1 = $taxi_raions->where('poputka_taxi_oblasts_id', $oblast_taxi->id); @endphp <div class="form-radio"> @foreach ($taxi_raion1 as $taxi_rai) <div class="radio radio-inline mr-0"> <label class="cat_close_3 mt-10" data-title="{{ $taxi_rai->raion_shaar }}"> <input type="radio" name="barchu_aimak" value="{{ $taxi_rai->id }}" required> <i class="helper"></i>{{ $taxi_rai->raion_shaar }} </label> </div> @endforeach </div> </div> @endforeach </div> </div> </div> </div> </div> </div> </div></div> '
                             );
-                            $.getScript("{{ asset('public/portfolio/files/assets/pages/accordion/accordion.js') }}");
+                            $.getScript("{{ asset('/portfolio/files/assets/pages/accordion/accordion.js') }}");
 
                             $('.1_data').on('change keyup', function() {
                                 var res1 = $(".1_data").val();

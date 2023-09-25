@@ -3,9 +3,9 @@
 @section('content')
 
 
-<link rel="stylesheet" type="text/css" href="{{ asset('public/packages/slick/slick.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/packages/slick/slick-theme.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/packages/custom_scroll/jquery.mCustomScrollbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/packages/slick/slick.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/packages/slick/slick-theme.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/packages/custom_scroll/jquery.mCustomScrollbar.css') }}">
 <style type="text/css">
 
 .morecontent span {
@@ -170,7 +170,7 @@
                                 @if($comment->user->img_600_600 == null)
                                     <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
                                 @else
-                                    <img src="{{ asset('public/storage/users/img_160_160/') }}/{{$comment->user->img_160_160}}" class="img-circle  shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
+                                    <img src="{{ asset('/storage/users/img_160_160/') }}/{{$comment->user->img_160_160}}" class="img-circle  shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
                                 @endif 
                               </div>
                               <div class="col" >
@@ -842,7 +842,7 @@
                                     @if(\Auth::user()->img_160_160 == null)
                                     <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%"  style="max-width: 50px;">
                                     @else
-                                    <img src="{{ asset('public/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
+                                    <img src="{{ asset('/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
                                     @endif 
                                 </div>
                                 <div class="col pl-1">
@@ -887,7 +887,7 @@
                                                         @if(\Auth::user()->img_160_160 == null)
                                                         <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%"  style="max-width: 50px;">
                                                         @else
-                                                        <img src="{{ asset('public/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
+                                                        <img src="{{ asset('/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
                                                         @endif 
                                                     </div>
                                                     
@@ -945,7 +945,7 @@
                                             @if(\Auth::user()->img_160_160 == null)
                                             <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%"  style="max-width: 50px;">
                                             @else
-                                            <img src="{{ asset('public/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
+                                            <img src="{{ asset('/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
                                             @endif 
                                         </div>
                                         <div class="col pl-1">
@@ -990,7 +990,7 @@
                                                     @if(\Auth::user()->img_160_160 == null)
                                                     <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%"  style="max-width: 50px;">
                                                     @else
-                                                    <img src="{{ asset('public/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="\Auth::user()->name}}" width="100%" style="max-width: 50px;">
+                                                    <img src="{{ asset('/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="\Auth::user()->name}}" width="100%" style="max-width: 50px;">
                                                     @endif 
                                                 </div>
                                                 
@@ -1048,7 +1048,7 @@
                                         @if(\Auth::user()->img_160_160 == null)
                                         <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%"  style="max-width: 50px;">
                                         @else
-                                        <img src="{{ asset('public/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
+                                        <img src="{{ asset('/storage/users/img_160_160/') }}/{{\Auth::user()->img_160_160}}" class="img-circle shadow-sm"  alt="{{\Auth::user()->name}}" width="100%" style="max-width: 50px;">
                                         @endif 
                                     </div>
                                     <div class="col pl-1">
@@ -1075,9 +1075,9 @@
     </section><!-- /.content -->
     <!-- /.content -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{ asset('public/packages/custom_scroll/jquery-1.11.0.min.js') }}"></script>
+<script src="{{ asset('/packages/custom_scroll/jquery-1.11.0.min.js') }}"></script>
 <script src="https://dwweb.ru/__a-data/__all_for_scripts/__examples/js/autosize_textarea/autosize.min.js"></script>
-<script src="{{ asset('public/packages/custom_scroll/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script src="{{ asset('/packages/custom_scroll/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 
   <script>window.onload = function(){autosize(document.querySelectorAll('textarea')); } </script>
 <script type="text/javascript">

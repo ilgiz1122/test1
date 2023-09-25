@@ -4,22 +4,22 @@
 <style>
     @font-face {
   font-family: Montserrat-Regular;
-  src: url('https://ort.mugalim.edu.kg/public/contact/fonts/montserrat/Montserrat-Regular.ttf'); 
+  src: url('https://ort.mugalim.edu.kg//contact/fonts/montserrat/Montserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('https://ort.mugalim.edu.kg/public/contact/fonts/montserrat/Montserrat-Bold.ttf'); 
+  src: url('https://ort.mugalim.edu.kg//contact/fonts/montserrat/Montserrat-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-ExtraBold;
-  src: url('https://ort.mugalim.edu.kg/public/contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  src: url('https://ort.mugalim.edu.kg//contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Medium;
-  src: url('https://ort.mugalim.edu.kg/public/contact/fonts/montserrat/Montserrat-Medium.ttf'); 
+  src: url('https://ort.mugalim.edu.kg//contact/fonts/montserrat/Montserrat-Medium.ttf'); 
 }
 
 /*---------------------------------------------*/

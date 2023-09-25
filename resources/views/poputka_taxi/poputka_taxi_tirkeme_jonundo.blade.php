@@ -23,11 +23,11 @@
 @endsection
 
 @section('img100_100')
-    {{ asset('public/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
+    {{ asset('/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
 @endsection
 
 @section('img480')
-    {{ asset('public/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
+    {{ asset('/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
 @endsection
 
 @section('content')

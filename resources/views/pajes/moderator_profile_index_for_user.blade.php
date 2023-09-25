@@ -67,7 +67,7 @@
                                     @if($moderator->img_600_600 == null)
                                     <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
                                     @else
-                                    <img src="{{ asset('public/storage/users/img_600_600/') }}/{{$moderator->img_600_600}}" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="{{$moderator->name}}">
+                                    <img src="{{ asset('/storage/users/img_600_600/') }}/{{$moderator->img_600_600}}" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="{{$moderator->name}}">
                                     @endif 
                                 </div>
                                 <div class="col-md-10 pt-3 pb-3">
@@ -109,7 +109,7 @@
                                     @if($moderator->img_600_600 == null)
                                     <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
                                     @else
-                                    <img src="{{ asset('public/storage/users/img_600_600/') }}/{{$moderator->img_600_600}}" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
+                                    <img src="{{ asset('/storage/users/img_600_600/') }}/{{$moderator->img_600_600}}" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
                                     @endif 
                                 </div>
                                 <div class="col-md-10 pt-3 pb-3">

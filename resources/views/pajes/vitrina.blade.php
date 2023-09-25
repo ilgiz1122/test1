@@ -74,7 +74,7 @@
                                       
                                         @foreach ($vitrinaimgs->where('vitrina_id', $vitrina->id) as $img)
                                         <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                        <img class="d-block w-100" src="{{ asset('public/storage/vitrina/img2/') }}/{{$img->img2}}" alt="{{$vitrina['title']}}">
+                                        <img class="d-block w-100" src="{{ asset('/storage/vitrina/img2/') }}/{{$img->img2}}" alt="{{$vitrina['title']}}">
                                         </div>
                                         @endforeach
                                       

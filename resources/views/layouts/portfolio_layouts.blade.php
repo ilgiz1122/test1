@@ -19,23 +19,23 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/bootstrap/css/bootstrap.min.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/bootstrap/css/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
         type="text/css" media="all">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/feather/css/feather.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/feather/css/feather.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/css/font-awesome-n.min.css') }}">
+        href="{{ asset('/portfolio/files/assets/css/font-awesome-n.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/bower_components/chartist/css/chartist.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/bower_components/chartist/css/chartist.css') }}"
         type="text/css" media="all">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/widget.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/pages.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/widget.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/pages.css') }}">
 
 
 </head>
@@ -54,7 +54,7 @@
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
                         <a href="index.html">
-                            <img class="img-fluid" src="{{ asset('public/portfolio/files/assets/images/logo.png') }}"
+                            <img class="img-fluid" src="{{ asset('/portfolio/files/assets/images/logo.png') }}"
                                 alt="Theme-Logo" />
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
@@ -102,7 +102,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">John Doe</h5>
@@ -115,7 +115,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Joseph William</h5>
@@ -128,7 +128,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Sara Soudein</h5>
@@ -152,7 +152,7 @@
                             <li class="user-profile header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <img src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                        <img src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                             class="img-radius" alt="User-Profile-Image">
                                         <span>John Doe</span>
                                         <i class="feather icon-chevron-down"></i>
@@ -216,7 +216,7 @@
                                     data-status="online" data-username="Josephin Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                             alt="Generic placeholder image ">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -228,7 +228,7 @@
                                     data-status="online" data-username="Lary Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -240,7 +240,7 @@
                                     data-status="online" data-username="Alice">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -252,7 +252,7 @@
                                     data-status="offline" data-username="Alia">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -265,7 +265,7 @@
                                     data-status="offline" data-username="Suzen">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -291,7 +291,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                 alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
@@ -313,7 +313,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                 alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
@@ -402,38 +402,38 @@
 
 
     <script data-cfasync="false"
-        src="{{ asset('public/portfolio/files/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">
+        src="{{ asset('/portfolio/files/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">
     </script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
-    </script>
-    <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
     </script>
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
+    </script>
+    <script type="text/javascript"
+        src="{{ asset('/portfolio/files/bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
 
-    <script src="{{ asset('public/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
 
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
 
-    {{-- <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.categories.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/curvedLines.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.tooltip.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/chart/float/curvedLines.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.tooltip.min.js') }}"></script> --}}
 
-    <script src="{{ asset('public/portfolio/files/bower_components/chartist/js/chartist.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/bower_components/chartist/js/chartist.js') }}"></script>
 
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/amcharts.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/serial.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/light.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/amcharts.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/serial.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/light.js') }}"></script>
 
-    <script src="{{ asset('public/portfolio/files/assets/js/pcoded.min.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/pcoded.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
     {{-- <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/assets/pages/dashboard/custom-dashboard.min.js') }}"></script> --}}
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/script.min.js') }}"></script>
+        src="{{ asset('/portfolio/files/assets/pages/dashboard/custom-dashboard.min.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/script.min.js') }}"></script>
 
     <script>
         //Активный меню үчүн

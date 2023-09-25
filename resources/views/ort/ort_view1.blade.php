@@ -3,8 +3,8 @@
 @section('title', 'ОРТ')
 
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/packages/slick/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/packages/slick/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/packages/slick/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/packages/slick/slick-theme.css') }}">
     <style>
         .cursor {
             cursor: pointer;
@@ -115,7 +115,7 @@
                         <div class="card mb-2 bg-gradient-dark" style="border-radius: 10px;">
                             <div class="img3">
                                 <img class="card-img-top img2" style="border-radius: 10px;"
-                                    src="{{ asset('public/storage/banner/') }}/{{ $banner->img }}">
+                                    src="{{ asset('/storage/banner/') }}/{{ $banner->img }}">
                             </div>
                             <div class="card-img-overlay d-flex flex-column justify-content-end">
                                 <h2 class="text-white mt-3"><b>{{ $banner->title }}</b></h2>
@@ -146,7 +146,7 @@
         <div class="row pt-5">
             <div class="col"></div>
             <div class="col-auto">
-                <p class="mb-0  text-center">Android платформасы үчүн уюлдук тиркеме<a href="{{ asset('public/files/НоНси - ОРТ.apk') }}" class=" text-center btn btn btn-outline-info pr-4 pl-4 ml-5 mr-5" download style="border-radius: 30px"><i class="fas fa-arrow-to-bottom pr-3"></i> Жүктөп алуу</a></p> 
+                <p class="mb-0  text-center">Android платформасы үчүн уюлдук тиркеме<a href="{{ asset('/files/НоНси - ОРТ.apk') }}" class=" text-center btn btn btn-outline-info pr-4 pl-4 ml-5 mr-5" download style="border-radius: 30px"><i class="fas fa-arrow-to-bottom pr-3"></i> Жүктөп алуу</a></p> 
                 
             </div>
             <div class="col"></div>

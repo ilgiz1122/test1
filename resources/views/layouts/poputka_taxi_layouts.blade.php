@@ -19,37 +19,37 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
     <link rel="stylesheet"
-        href="{{ asset('public/portfolio/files/bower_components/bootstrap/css/bootstrap.min.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/bootstrap/css/bootstrap.min.css') }}">
 
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
         type="text/css" media="all">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/feather/css/feather.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/feather/css/feather.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/owl.carousel/css/owl.carousel.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/owl.carousel/css/owl.carousel.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/owl.carousel/css/owl.theme.default.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/owl.carousel/css/owl.theme.default.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/swiper/css/swiper.min.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/swiper/css/swiper.min.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/icofont/css/icofont.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/icofont/css/icofont.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/themify-icons/themify-icons.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/themify-icons/themify-icons.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/css/font-awesome-n.min.css') }}">
+        href="{{ asset('/portfolio/files/assets/css/font-awesome-n.min.css') }}">
 
-        <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/component.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/admin/dist/css/bs-stepper.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/component.css') }}">
+    <link rel="stylesheet" href="{{ asset('/admin/dist/css/bs-stepper.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/pages.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/pages.css') }}">
 
 
-    <script src="{{ asset('public/admin/fontawesomepro.js') }}"></script>
+    <script src="{{ asset('/admin/fontawesomepro.js') }}"></script>
 
 </head>
 
@@ -68,7 +68,7 @@
                     <div class="navbar-logo pt-10 pb-10">
                         <a href="" class=""
                             style="font-size: 16px; font-weight: 700; line-height: 1.1; margin-top: 8px; font-family: open sans, sans-serif;">
-                            {{-- <img class="img-fluid" src="{{ asset('public/portfolio/files/assets/images/logo1.png') }}"
+                            {{-- <img class="img-fluid" src="{{ asset('/portfolio/files/assets/images/logo1.png') }}"
                                 alt="Theme-Logo" /> --}}
                                 @yield('content1')
                         </a>
@@ -199,47 +199,47 @@
 
 
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
     </script>
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
 
 
 
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
     </script>
 
-    <script src="{{ asset('public/portfolio/files/bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
 
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/modernizr/js/modernizr.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/modernizr/js/modernizr.js') }}">
     </script>
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/modernizr/js/css-scrollbars.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/modernizr/js/css-scrollbars.js') }}"></script>
 
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/owl.carousel/js/owl.carousel.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/owl-custom.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/swiper/js/swiper.min.js') }}">
+        src="{{ asset('/portfolio/files/bower_components/owl.carousel/js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/owl-custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/swiper/js/swiper.min.js') }}">
     </script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/swiper-custom.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/js/pcoded.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/swiper-custom.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/pcoded.min.js') }}"></script>
 
-    <script src="{{ asset('public/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/script.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/script.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.js"></script>
 
 
 
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/inputmask.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/jquery.inputmask.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/inputmask.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/jquery.inputmask.js') }}"></script>
 
     <script>
         //Активный меню үчүн

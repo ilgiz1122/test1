@@ -97,7 +97,7 @@
                     <section class="slider-for slider mt-0" style="margin-left: -10px; margin-right: -10px;">
                         @foreach ($vitrinaimgs as $img)
                         <div style="border-radius: 10px;">
-                            <img class="border" style="border-radius: 5px; width: 100%;" src="{{ asset('public/storage/vitrina/img1/') }}/{{$img->img1}}">
+                            <img class="border" style="border-radius: 5px; width: 100%;" src="{{ asset('/storage/vitrina/img1/') }}/{{$img->img1}}">
                         </div>
                         @endforeach
                     </section>
@@ -105,7 +105,7 @@
                         @if(count($vitrinaimgs) > 1)
                             @foreach ($vitrinaimgs as $img)
                             <div>
-                                <img class="border shadow-sm" style="border-radius: 5px; width: 100%;" src="{{ asset('public/storage/vitrina/img2/') }}/{{$img->img2}}">
+                                <img class="border shadow-sm" style="border-radius: 5px; width: 100%;" src="{{ asset('/storage/vitrina/img2/') }}/{{$img->img2}}">
                             </div>
                             @endforeach
                         @endif
@@ -151,7 +151,7 @@
                                 <p class="mb-0"><b>Файл:</b> <em>{{substr($vitrina->title, 0, 10)}}.....{{substr($vitrina->title, -5)}}.{{ pathinfo($vitrina->demofile)['extension'] }}</em></p>
                             </div>   
                             <div class="col-auto">
-                                <a class="btn btn-outline-info btn-block btn-sm" download="{{$vitrina->title}}.{{ pathinfo($vitrina->demofile)['extension'] }}" style="display:block" href="{{ asset('public/storage/vitrina/demofile/'.$vitrina->demofile)}}">Скачать <i class="fal fa-download pl-2"></i></a>
+                                <a class="btn btn-outline-info btn-block btn-sm" download="{{$vitrina->title}}.{{ pathinfo($vitrina->demofile)['extension'] }}" style="display:block" href="{{ asset('/storage/vitrina/demofile/'.$vitrina->demofile)}}">Скачать <i class="fal fa-download pl-2"></i></a>
                             </div>                          
                         </div>                        
                     @endif

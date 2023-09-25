@@ -300,7 +300,7 @@
                                 <div class="media">
                                     @if (Auth::user()->img_600_600 != null)
                                         <div class="mr-3 mt-2"><img class=" img-circle"
-                                                src="{{ asset('public/storage/users/img_600_600/') }}/{{ Auth::user()->img_600_600 }}"
+                                                src="{{ asset('/storage/users/img_600_600/') }}/{{ Auth::user()->img_600_600 }}"
                                                 style="width: 50px;"></div>
                                     @else
                                         <i style="font-size: 50px;" class="fas fa-user-circle mr-3 pt-2 text-muted"></i>
@@ -687,7 +687,7 @@
     <script src="{{asset('')}}/admin/plugins/sparklines/sparkline.js"></script>
     <!-- JQVMap -->
     <script src="{{asset('')}}/admin/plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="{{asset('')}}../public/admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="{{asset('')}}../admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
     <!-- jQuery Knob Chart -->
     <script src="{{asset('')}}/admin/plugins/jquery-knob/jquery.knob.min.js"></script>
     <!-- daterangepicker -->
@@ -726,7 +726,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
-    {{-- <script src="{{ asset('public/packages/ckeditor4/wirislib.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/packages/ckeditor4/wirislib.js') }}"></script> --}}
     <!--  -->
 
 

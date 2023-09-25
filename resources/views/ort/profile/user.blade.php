@@ -51,7 +51,7 @@ input::-webkit-inner-spin-button {
                             </div>
                             <div class="widget-user-image1">
                                 @if($users->img_600_600 != null)
-                                      <img class=" img-circle" src="{{ asset('public/storage/users/img_600_600/') }}/{{$users->img_600_600}}">
+                                      <img class=" img-circle" src="{{ asset('/storage/users/img_600_600/') }}/{{$users->img_600_600}}">
                                 @else
                                       <img class="img-circle" src="{{asset('')}}/admin/dist/img/user-3331256_960_720 (1).png">
                                 @endif

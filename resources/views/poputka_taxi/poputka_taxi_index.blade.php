@@ -23,11 +23,11 @@
 @endsection
 
 @section('img100_100')
-    {{ asset('public/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
+    {{ asset('/storage/reklama/priloj_img_100_100/') }}/{{ $prilojenie_name->prilojenie_img }}
 @endsection
 
 @section('img480')
-    {{ asset('public/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
+    {{ asset('/storage/reklama/priloj_img_480/') }}/{{ $prilojenie_name->prilojenie_small_title }}
 @endsection
 
 @section('content')
@@ -245,7 +245,7 @@
                                                         <div
                                                             class="carousel-item @if ($loop->iteration == 1) active @endif">
                                                             <img class="d-block img-fluid w-100 img_style"
-                                                                src="{{ asset('public/storage/reklama/img/') }}/{{ $img->img }}"
+                                                                src="{{ asset('/storage/reklama/img/') }}/{{ $img->img }}"
                                                                 alt="" loading="lazy">
                                                         </div>
                                                     @endforeach
@@ -267,7 +267,7 @@
                                     @else
                                         @foreach ($reklama->poputka_taxi_img as $img)
                                             <img class=""
-                                                src="{{ asset('public/storage/reklama/img/') }}/{{ $img->img }}"
+                                                src="{{ asset('/storage/reklama/img/') }}/{{ $img->img }}"
                                                 loading="lazy" width="100%" alt="501 01 08 20"
                                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px">
                                         @endforeach

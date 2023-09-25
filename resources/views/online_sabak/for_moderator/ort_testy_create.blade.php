@@ -336,7 +336,7 @@
                                             <div class="col-md-5 mt-30">
                                                 <div class="card mb-0 for_video_and_img" type="button">
                                                     <img class="card-img-top img-fluid img_net_img"
-                                                        src="{{ asset('public/img/not_test.png') }}" alt="Сүрөт жок"
+                                                        src="{{ asset('/img/not_test.png') }}" alt="Сүрөт жок"
                                                         id="rebate_old_imag">
                                                 </div>
                                                 <div class="form-group" style="display: none;">

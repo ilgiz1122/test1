@@ -58,7 +58,7 @@
                       <a  style="display:block" href="{{ route('ort_predmettik_test_podcat', ['subdomain' => 'ort', 'id' => $test_podcategory->id]) }}"></a>
                   @endif
                     <div class="info-box shadow-sm for_shadow" style="background: Light;">
-                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://ort.mugalim.edu.kg/public/{{$test_podcategory['img']}}"></span>
+                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://ort.mugalim.edu.kg/{{$test_podcategory['img']}}"></span>
                         <div class="info-box-content">
                             <h4><strong><span class="info-box-text for_color truncate2">{{$test_podcategory['title']}}</span></strong></h4>
                             <span class="info-box-number">Тесттердин саны: {{$test_podcategory->testy_count}}</span>

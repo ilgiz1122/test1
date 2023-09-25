@@ -262,7 +262,7 @@ color1
                                             <div class="row" style="margin-left: 1px; margin-right: 13px;">
                                             @foreach ($vitrinaimgs as $vitrinaimg)
                                                 <div class="foto1 for_foto1 col-4 px-lg-2 py-lg-2 p-0 album{{$loop->iteration}}" id="{{$loop->iteration}}">
-                                                    <img src="{{ asset('public/storage/vitrina/img2/') }}/{{$vitrinaimg->img2}}" class="for_upload_img border shadow-sm" style="border-radius: 4px; margin: 6.7px;">
+                                                    <img src="{{ asset('/storage/vitrina/img2/') }}/{{$vitrinaimg->img2}}" class="for_upload_img border shadow-sm" style="border-radius: 4px; margin: 6.7px;">
                                                     <div class="timeline foto2 for_foto2">
                                                         <div>
                                                             <i class="fas fa-times  delete-image" title="Удалить" type="button" data-id="{{$vitrinaimg->id}}" style="padding-top: 0;"></i>

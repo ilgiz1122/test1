@@ -22,50 +22,50 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/assets/pages/waves/css/waves.min.css') }}"
         type="text/css" media="all">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/feather/css/feather.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/feather/css/feather.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/icon/icofont/css/icofont.css') }}">
+        href="{{ asset('/portfolio/files/assets/icon/icofont/css/icofont.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/css/font-awesome-n.min.css') }}">
+        href="{{ asset('/portfolio/files/assets/css/font-awesome-n.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/bower_components/chartist/css/chartist.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/bower_components/chartist/css/chartist.css') }}"
         type="text/css" media="all">
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/assets/pages/chart/radial/css/radial.css') }}"
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/assets/pages/chart/radial/css/radial.css') }}"
         type="text/css" media="all">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/pages/toolbar/jquery.toolbar.css') }}">
+        href="{{ asset('/portfolio/files/assets/pages/toolbar/jquery.toolbar.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/assets/pages/toolbar/custom-toolbar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/pages.css') }}">
+        href="{{ asset('/portfolio/files/assets/pages/toolbar/custom-toolbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/pages.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/switchery/css/switchery.min.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/switchery/css/switchery.min.css') }}">
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/bootstrap-tagsinput/css/bootstrap-tagsinput.css') }}" />
+        href="{{ asset('/portfolio/files/bower_components/bootstrap-tagsinput/css/bootstrap-tagsinput.css') }}" />
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/owl.carousel/css/owl.carousel.css') }}">
+        href="{{ asset('/portfolio/files/bower_components/owl.carousel/css/owl.carousel.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('public/portfolio/files/bower_components/select2/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/portfolio/files/bower_components/select2/css/select2.min.css') }}" />
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css') }}" />
+        href="{{ asset('/portfolio/files/bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css') }}" />
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/portfolio/files/bower_components/multiselect/css/multi-select.css') }}" />
+        href="{{ asset('/portfolio/files/bower_components/multiselect/css/multi-select.css') }}" />
 
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portfolio/files/assets/css/widget.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/admin/plugins/summernote/summernote-bs4.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/portfolio/files/assets/css/widget.css') }}">
+    <link rel="stylesheet" href="{{ asset('/admin/plugins/summernote/summernote-bs4.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
 
 
-    <script src="{{ asset('public/admin/fontawesomepro.js') }}"></script>
+    <script src="{{ asset('/admin/fontawesomepro.js') }}"></script>
 
 </head>
 
@@ -83,7 +83,7 @@
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
                         <a href="index.html">
-                            {{-- <img class="img-fluid" src="{{ asset('public/portfolio/files/assets/images/logo1.png') }}"
+                            {{-- <img class="img-fluid" src="{{ asset('/portfolio/files/assets/images/logo1.png') }}"
                                 alt="Theme-Logo" /> --}}
                             НоНси - ОРТ
                         </a>
@@ -133,7 +133,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">John Doe</h5>
@@ -146,7 +146,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Joseph William</h5>
@@ -159,7 +159,7 @@
                                         <li>
                                             <div class="media">
                                                 <img class="img-radius"
-                                                    src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                                    src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Sara Soudein</h5>
@@ -185,7 +185,7 @@
                                     <div class="dropdown-toggle" data-toggle="dropdown">
                                         @if (Auth::user())
                                             @if (Auth::user()->img_600_600 != null)
-                                                <img class="img-radius" src="{{ asset('public/storage/users/img_160_160/') }}/{{ Auth::user()->img_160_160 }}">
+                                                <img class="img-radius" src="{{ asset('/storage/users/img_160_160/') }}/{{ Auth::user()->img_160_160 }}">
                                             @else
                                                 <i style="font-size: 30px;" class="fas fa-user-circle text-muted mt-10"></i>
                                             @endif
@@ -214,7 +214,7 @@
                                                     
                                                         <div class="text-center">
                                                             @if (Auth::user()->img_600_600 != null)
-                                                                <img class="mr-0 img-circle" src="{{ asset('public/storage/users/img_160_160/') }}/{{ Auth::user()->img_160_160 }}" style="width: 50px;">
+                                                                <img class="mr-0 img-circle" src="{{ asset('/storage/users/img_160_160/') }}/{{ Auth::user()->img_160_160 }}" style="width: 50px;">
                                                             @else
                                                                 <i style="font-size: 50px;"
                                                                     class="fas fa-user-circle text-muted"></i>
@@ -278,7 +278,7 @@
                                     data-status="online" data-username="Josephin Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                             alt="Generic placeholder image ">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -290,7 +290,7 @@
                                     data-status="online" data-username="Lary Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -302,7 +302,7 @@
                                     data-status="online" data-username="Alice">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-4.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-4.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -314,7 +314,7 @@
                                     data-status="offline" data-username="Alia">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-3.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-3.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -327,7 +327,7 @@
                                     data-status="offline" data-username="Suzen">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius"
-                                            src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                            src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -356,7 +356,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                 alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
@@ -378,7 +378,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="{{ asset('public/portfolio/files/assets/images/avatar-2.jpg') }}"
+                                src="{{ asset('/portfolio/files/assets/images/avatar-2.jpg') }}"
                                 alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
@@ -622,17 +622,17 @@
 
 
     <script data-cfasync="false"
-        src="{{ asset('public/portfolio/files/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">
+        src="{{ asset('/portfolio/files/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">
     </script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/jquery/js/jquery.min.js') }}">
     </script>
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
 
 
 
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/popper.js/js/popper.min.js') }}">
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
@@ -641,50 +641,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('public/portfolio/files/bower_components/switchery/js/switchery.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/bower_components/switchery/js/switchery.min.js') }}"></script>
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/pages/accordion/accordion.js') }}">
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/pages/accordion/accordion.js') }}">
     </script>
-    <script src="{{ asset('public/admin/plugins/summernote/summernote-bs4.js') }}"></script>
-    <script src="{{ asset('public/admin/plugins/summernote/lang/summernote-ru-RU.js') }}"></script>
+    <script src="{{ asset('/admin/plugins/summernote/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('/admin/plugins/summernote/lang/summernote-ru-RU.js') }}"></script>
 
 
-    <script src="{{ asset('public/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/waves/js/waves.min.js') }}"></script>
 
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
 
-    {{-- <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.js') }}"></script> --}}
-    {{-- <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.categories.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/curvedLines.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/chart/float/jquery.flot.tooltip.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.js') }}"></script> --}}
+    {{-- <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/chart/float/curvedLines.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/chart/float/jquery.flot.tooltip.min.js') }}"></script> --}}
 
-    <script src="{{ asset('public/portfolio/files/bower_components/chartist/js/chartist.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/jquery.stickme.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/amcharts.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/serial.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/widget/amchart/light.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/bower_components/chartist/js/chartist.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/jquery.stickme.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/amcharts.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/serial.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/widget/amchart/light.js') }}"></script>
 
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/inputmask.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/jquery.inputmask.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/autoNumeric.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/pages/form-masking/form-mask.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/pages/toolbar/jquery.toolbar.min.js') }}">
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/inputmask.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/jquery.inputmask.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/autoNumeric.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/pages/form-masking/form-mask.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/pages/toolbar/jquery.toolbar.min.js') }}">
     </script>
-    {{-- <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/pages/widget/widget-chart.js') }}"></script> --}}
+    {{-- <script type="text/javascript" src="{{ asset('/portfolio/files/assets/pages/widget/widget-chart.js') }}"></script> --}}
 
-    <script src="{{ asset('public/portfolio/files/assets/js/pcoded.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/bower_components/modernizr/js/modernizr.js') }}">
+    <script src="{{ asset('/portfolio/files/assets/js/pcoded.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/bower_components/modernizr/js/modernizr.js') }}">
     </script>
     <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/bower_components/modernizr/js/css-scrollbars.js') }}"></script>
-    <script src="{{ asset('public/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
+        src="{{ asset('/portfolio/files/bower_components/modernizr/js/css-scrollbars.js') }}"></script>
+    <script src="{{ asset('/portfolio/files/assets/js/vertical/vertical-layout.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 
     {{-- <script type="text/javascript"
-        src="{{ asset('public/portfolio/files/assets/pages/dashboard/custom-dashboard.min.js') }}"></script> --}}
+        src="{{ asset('/portfolio/files/assets/pages/dashboard/custom-dashboard.min.js') }}"></script> --}}
 
-    <script type="text/javascript" src="{{ asset('public/portfolio/files/assets/js/script.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/portfolio/files/assets/js/script.min.js') }}"></script>
     <script>
         //Активный меню үчүн
         var url = window.location;

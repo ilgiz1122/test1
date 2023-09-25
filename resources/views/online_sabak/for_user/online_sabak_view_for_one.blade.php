@@ -753,9 +753,9 @@
                             <div class="col-2"></div>
                             <div class="col-8 text-center">
                                 @if($onlain_sabak->user->img_600_600 == null)
-                                    <img src="{{ asset('public/admin/dist/img/user-icon.svg') }}" class="img-fluid img-circle"  alt="{{$onlain_sabak->user->name}}" style="border: 3px solid; border-radius: 50%; border-color: #4099ff;">
+                                    <img src="{{ asset('/admin/dist/img/user-icon.svg') }}" class="img-fluid img-circle"  alt="{{$onlain_sabak->user->name}}" style="border: 3px solid; border-radius: 50%; border-color: #4099ff;">
                                     @else
-                                    <img src="{{ asset('public/storage/users/org_img/') }}/{{ $onlain_sabak->user->org_img }}" class="img-fluid img-circle"  alt="{{$onlain_sabak->user->name}}" style="border: 3px solid; border-radius: 50%; border-color: #4099ff;">
+                                    <img src="{{ asset('/storage/users/org_img/') }}/{{ $onlain_sabak->user->org_img }}" class="img-fluid img-circle"  alt="{{$onlain_sabak->user->name}}" style="border: 3px solid; border-radius: 50%; border-color: #4099ff;">
                                 @endif
                             </div>
                             <div class="col-2"></div>

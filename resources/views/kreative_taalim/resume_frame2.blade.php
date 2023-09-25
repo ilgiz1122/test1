@@ -31,7 +31,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     @if($resume->img != null)
-                                        <img src="{{ asset('public/storage/kreative/images/mugalim/') }}/{{$resume->img}}" width="100%" class="shadow-lg border" style="border-radius: 4px;">
+                                        <img src="{{ asset('storage/kreative/images/mugalim/') }}/{{$resume->img}}" width="100%" class="shadow-lg border" style="border-radius: 4px;">
                                     @else
                                         <img src="https://planetapechey.ru/assets/land_04032021/images/reviews/person-default.png" width="100%" class="shadow-lg border" style="border-radius: 4px;">
                                     @endif

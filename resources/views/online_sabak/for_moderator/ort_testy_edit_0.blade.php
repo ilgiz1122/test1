@@ -588,7 +588,7 @@
                                             <div class="col-md-5 mt-30">
                                                 <div class="card mb-0 for_video_and_img" type="button">
                                                     <img class="card-img-top img-fluid img_net_img"
-                                                        @if ($test->img != null) src="{{ asset('public/storage/testy/images/thumbnail/') }}/{{ $test->img }}" @else src="{{ asset('public/img/not_test.png') }}" @endif
+                                                        @if ($test->img != null) src="{{ asset('/storage/testy/images/thumbnail/') }}/{{ $test->img }}" @else src="{{ asset('/img/not_test.png') }}" @endif
                                                         alt="Сүрөт жок" id="rebate_old_imag">
                                                 </div>
                                                 <div class="form-group img_hide">
@@ -1074,7 +1074,7 @@
                                     <div class="foto1 for_foto1 mt-20"
                                         @if ($test_voprosys[$key]->img_voprosa == null) style="display: none;" @endif>
                                         <img class="vopros_img"
-                                            @if ($test_voprosys[$key]->img_voprosa != null) src="{{ asset('public/storage/testy/images/imgvoprosa/') }}/{{ $test_voprosys[$key]->img_voprosa }}" @else src="" @endif
+                                            @if ($test_voprosys[$key]->img_voprosa != null) src="{{ asset('/storage/testy/images/imgvoprosa/') }}/{{ $test_voprosys[$key]->img_voprosa }}" @else src="" @endif
                                             alt="" style="width: 100%; border-radius: 4px;">
                                         <div class="timeline foto2 for_foto2">
                                             <div>
