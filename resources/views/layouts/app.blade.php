@@ -242,7 +242,7 @@
           <a href="{{ route('profil.index')}}" class="dropdown-item">
             <div class="media">
               @if(Auth::user()->img_600_600 != null)
-                  <div class="mr-3 mt-2"><img class=" img-circle" src="{{ asset('/storage/users/img_600_600/') }}/{{Auth::user()->img_600_600}}" style="width: 50px;"></div>
+                  <div class="mr-3 mt-2"><img class=" img-circle" src="{{ asset('public/storage/users/img_600_600/') }}/{{Auth::user()->img_600_600}}" style="width: 50px;"></div>
               @else
                   <i style="font-size: 50px;" class="fas fa-user-circle mr-3 pt-2 text-muted"></i>
               @endif
