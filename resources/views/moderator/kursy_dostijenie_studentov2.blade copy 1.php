@@ -55,7 +55,7 @@
                             <div class="row align-items-top">
                                 <div class="col-md-6">
                                     <div class="user-block">
-                                        <img class="img-svg direct-chat-img" src="https://nonsi.kg/public/files/icons/user.svg">
+                                        <img class="img-svg direct-chat-img" src="{{asset('')}}/files/icons/user.svg">
                                         <span class="username">
                                           <a href="#">{{$kupit->user_name}}</a>
                                         </span>
@@ -460,7 +460,7 @@
                                                 <div class="row">
                                                     @foreach ($zadanie_otvety_imgs->where('zadanie_otveties_id', $zadanie_otvety1->id) as $zadanie_otvety_img)
                                                     <div class="col-12 mt-2">
-                                                        <img class="border shadow-sm" src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_img->img}}" style="border-radius: 4px; width: 100%;"> 
+                                                        <img class="border shadow-sm" src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_img->img}}" style="border-radius: 4px; width: 100%;"> 
                                                     </div>   
                                                     @endforeach                                                 
                                                 </div>

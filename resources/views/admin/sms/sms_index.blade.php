@@ -91,7 +91,7 @@
                             <div class="row align-items-top">
                               <div class="col-auto pr-0 dropleft">
                                 <a class="btn btn-tool p-0" role="button" data-toggle="dropdown" id="dropdownMenuOffset{{$loop->iteration}}" type="button"  data-offset="0,0">
-                                  <img class="img-svg direct-chat-img" src="https://nonsi.kg/public/files/icons/user.svg">
+                                  <img class="img-svg direct-chat-img" src="{{asset('')}}/files/icons/user.svg">
                                 </a>
                                 <!-- dropdown-menu -->
                                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right pt-0 pb-0 keep_open">
@@ -143,7 +143,7 @@
                           <ul class="contacts-list">
                             <li>
                               <a href="#">
-                                <img class="contacts-list-img img-svg" src="https://nonsi.kg/public/files/icons/user.svg">
+                                <img class="contacts-list-img img-svg" src="{{asset('')}}/files/icons/user.svg">
                                 <div class="contacts-list-info">
                                   <span class="contacts-list-name">
                                     Count Dracula
@@ -189,7 +189,7 @@
                             <div class="row align-items-top">
                               <div class="col-auto pr-0 dropleft">
                                 <a class="btn btn-tool p-0" role="button" data-toggle="dropdown" id="dropdownMenuOffset{{$loop->iteration}}" type="button"  data-offset="0,0">
-                                  <img class="img-svg direct-chat-img" src="https://nonsi.kg/public/files/icons/user.svg">
+                                  <img class="img-svg direct-chat-img" src="{{asset('')}}/files/icons/user.svg">
                                 </a>
                                 <!-- dropdown-menu -->
                                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right pt-0 pb-0 keep_open">
@@ -246,7 +246,7 @@
                           <ul class="contacts-list">
                             <li>
                               <a href="#">
-                                <img class="contacts-list-img img-svg" src="https://nonsi.kg/public/files/icons/user.svg">
+                                <img class="contacts-list-img img-svg" src="{{asset('')}}/files/icons/user.svg">
                                 <div class="contacts-list-info">
                                   <span class="contacts-list-name">
                                     Count Dracula
@@ -374,7 +374,7 @@
                           <ul class="contacts-list">
                             <li>
                               <a href="#">
-                                <img class="contacts-list-img img-svg" src="https://nonsi.kg/public/files/icons/user.svg">
+                                <img class="contacts-list-img img-svg" src="{{asset('')}}/files/icons/user.svg">
                                 <div class="contacts-list-info">
                                   <span class="contacts-list-name">
                                     Count Dracula
@@ -434,7 +434,7 @@
                 <div class="modal-content" style="border-radius: 10px;">
                     <div class="card mb-0 bg-gradient-dark" style="border-radius: 10px;">
                         <div class="img3">
-                            <img class="card-img-top img2" id="var_img" style="border-radius: 10px;" src="https://nonsi.kg/public/img/net_kartinki2.jpg">
+                            <img class="card-img-top img2" id="var_img" style="border-radius: 10px;" src="{{asset('')}}/img/net_kartinki2.jpg">
                         </div>
                       <div class="card-img-overlay d-flex flex-column justify-content-end">
                         <h2 class="text-white "><b class="var_title">Тема рекламы</b></h2>

@@ -57,7 +57,7 @@
 
 
                             <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                              <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                              <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                             </div>
                             <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                 <div class="row rrttrr">

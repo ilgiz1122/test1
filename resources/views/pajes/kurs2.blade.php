@@ -37,7 +37,7 @@
                         <div class="card-body pt-3 pb-2 pl-3 pr-3">
                             @if($podcategories['video'] != null)
                                  <video oncontextmenu="return false;" controls controlsList="nodownload" width="100%" height="100%" style="border-radius: 3px;">
-                                      <source id="video" src="https://nonsi.kg/public/storage/kursy/reklamnoevideo/{{$podcategories->video}}" type="video/mp4">
+                                      <source id="video" src="{{asset('')}}/storage/kursy/reklamnoevideo/{{$podcategories->video}}" type="video/mp4">
                                           Ваш браузер не поддерживает видео tag.
                                   </video>
                                 @endif
@@ -245,7 +245,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6 pl-3 pr-3">
-                        <img class="d-block w-100" id="rebate_old_imag23" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategories['img']}}" style="width: 100%; border-radius: 4px;">
+                        <img class="d-block w-100" id="rebate_old_imag23" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategories['img']}}" style="width: 100%; border-radius: 4px;">
                     </div>
                     <div class="col-md-6 pl-3 pr-3">
                         <p class="text-muted mb-0 pt-3">Автор <span class="float-right">{{$users->name}}</span></p><hr class="mt-2">
@@ -323,7 +323,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6 pl-3 pr-3">
-                        <img class="d-block w-100" id="rebate_old_imag23" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategories['img']}}" style="width: 100%; border-radius: 4px;">
+                        <img class="d-block w-100" id="rebate_old_imag23" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategories['img']}}" style="width: 100%; border-radius: 4px;">
                     </div>
                     <div class="col-md-6 pl-3 pr-3">
                         <p class="text-muted mb-0 pt-3">Автор <span class="float-right">{{$users->name}}</span></p><hr class="mt-2">

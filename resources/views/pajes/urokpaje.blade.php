@@ -251,7 +251,7 @@
                 <span class="pt-2 pb-2">{{$video[$key]->video_title}}</span>
                 <div class="card bg-light d-flex flex-fill mb-4 mt-2">
                   <video oncontextmenu="return false;" controls controlsList="nodownload" width="100%" height="100%" style="border-radius: 3px;">
-                    <source id="video" src="https://nonsi.kg/public/storage/kursy/videos/{{$video_name[$key]->video_name}}" type="video/mp4">
+                    <source id="video" src="{{asset('')}}/storage/kursy/videos/{{$video_name[$key]->video_name}}" type="video/mp4">
                       Ваш браузер не поддерживает видео tag.
                   </video>
                 </div>
@@ -270,7 +270,7 @@
                   <div class="card-body p-0 class11">
                     <div class="row">
                       <div class="col-md-6">
-                        <img style="width: 100%; border-radius: 4px;" @if($tests['img'] != null) src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$tests['img']}}" @else src="https://assets-global.website-files.com/5e78ee1f2f0ca263f9b67c56/5f04a4babe7bb91e10639f9a_ssat-at-home01%402x.png" @endif>
+                        <img style="width: 100%; border-radius: 4px;" @if($tests['img'] != null) src="{{asset('')}}/storage/testy/images/thumbnail/{{$tests['img']}}" @else src="https://assets-global.website-files.com/5e78ee1f2f0ca263f9b67c56/5f04a4babe7bb91e10639f9a_ssat-at-home01%402x.png" @endif>
                       </div>
                       <div class="col-md-6">
                         <div class="card-body pr-3 pl-3 pt-4 pb-3">
@@ -449,7 +449,7 @@
                       <div class="modal-body">
                         <div class="row align-items-center">
                           <div class="col-md-6 pl-3 pr-3">
-                            <img  class="d-block w-100" id="rebate_old_imag23"  style="width: 100%; border-radius: 4px;" @if($tests['img'] != null) src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$tests['img']}}" @else src="https://assets-global.website-files.com/5e78ee1f2f0ca263f9b67c56/5f04a4babe7bb91e10639f9a_ssat-at-home01%402x.png" @endif>
+                            <img  class="d-block w-100" id="rebate_old_imag23"  style="width: 100%; border-radius: 4px;" @if($tests['img'] != null) src="{{asset('')}}/storage/testy/images/thumbnail/{{$tests['img']}}" @else src="https://assets-global.website-files.com/5e78ee1f2f0ca263f9b67c56/5f04a4babe7bb91e10639f9a_ssat-at-home01%402x.png" @endif>
                           </div>
                           <div class="col-md-6 pl-3 pr-3">
                             <p class="text-muted mb-0 pt-3">Автор <span class="float-right">{{$tests->user['name']}}</span></p><hr class="mt-2">
@@ -503,7 +503,7 @@
                   @foreach ($zadanie_img as $img)
                   <div class="col-12 px-lg-2 py-lg-2 pt-2">
                     <div class="">
-                      <img class="border" src="https://nonsi.kg/public/storage/kursy/zadanie/images/{{$img['img']}}" style="width: 100%; border-radius: 5px;">
+                      <img class="border" src="{{asset('')}}/storage/kursy/zadanie/images/{{$img['img']}}" style="width: 100%; border-radius: 5px;">
                     </div>
                   </div>
                   @endforeach
@@ -599,7 +599,7 @@
                                   </div>
                                   <div class="border" style="border-radius: 4px;">
                                     @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                    <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                    <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                     @endforeach         
                                   </div>
                                 </div>
@@ -662,7 +662,7 @@
                                   </div>
                                   <div class="border" style="border-radius: 4px;">
                                     @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                    <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                    <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                     @endforeach         
                                   </div>
                                 </div>
@@ -710,7 +710,7 @@
                                   </div>
                                   <div class="border" style="border-radius: 4px;">
                                     @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                    <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                    <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                     @endforeach         
                                   </div>
                                 </div>
@@ -807,7 +807,7 @@
                                   </div>
                                   <div class="border" style="border-radius: 4px;">
                                     @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                    <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                    <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                     @endforeach         
                                   </div>
                                 </div>
@@ -917,7 +917,7 @@
                                   </div>
                                   <div class="border" style="border-radius: 4px;">
                                     @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                    <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                    <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                     @endforeach         
                                   </div>
                                 </div>
@@ -1092,7 +1092,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1155,7 +1155,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1203,7 +1203,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1300,7 +1300,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1410,7 +1410,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1536,7 +1536,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1582,7 +1582,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1629,7 +1629,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1676,7 +1676,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1723,7 +1723,7 @@
                                     </div>
                                     <div class="border" style="border-radius: 4px;">
                                       @foreach ($zadanie_otvety_img as $zadanie_otvety_im)
-                                      <img src="https://nonsi.kg/public/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
+                                      <img src="{{asset('')}}/storage/kursy/zadanie/images/otvety/{{$zadanie_otvety_im->img}}" class="for_upload_img2 border shadow-sm m-2" style="border-radius: 4px;">
                                       @endforeach         
                                     </div>
                                   </div>
@@ -1973,7 +1973,7 @@
 <script src="https://dwweb.ru/__a-data/__all_for_scripts/__examples/js/autosize_textarea/autosize.min.js"></script>
   <script>window.onload = function(){autosize(document.querySelectorAll('textarea')); } </script>
 
-<script src="https://nonsi.kg/public/admin/plyr.js"></script>
+<script src="{{asset('')}}/admin/plyr.js"></script>
 <script type="text/javascript">
 
 

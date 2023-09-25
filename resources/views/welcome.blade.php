@@ -86,7 +86,7 @@ hr.new2 {
      
     <div class="row ml-0 mr-0">
         <!--<div class="col-md-6 p-0">
-              <img class="card-img-top" src="https://nonsi.kg/public/img/2_l_1280_1(2).jpg" alt="Dist Photo 2">
+              <img class="card-img-top" src="{{asset('')}}/img/2_l_1280_1(2).jpg" alt="Dist Photo 2">
               <div class="card-img-overlay d-flex flex-column justify-content-center pl-5 pr-5">
                 <h1 class="text-dark"><strong>Скачивайте<br><span class="h2"><strong>материалы</strong></span></strong></h1>
                 <p class="pb-2 pt-1 text-muted">
@@ -107,7 +107,7 @@ hr.new2 {
               </div>
         </div>
         <div class="col-md-6 p-0">
-              <img class="card-img-top" src="https://nonsi.kg/public/img/2_r_1280_1 (2).jpg" alt="Dist Photo 2">
+              <img class="card-img-top" src="{{asset('')}}/img/2_r_1280_1 (2).jpg" alt="Dist Photo 2">
               <div class="card-img-overlay d-flex flex-column justify-content-center pl-5 pr-5">
                 <h1 class="text-dark"><strong>Пройдите <br><span class="h2"><strong>онлайн курсы</strong></span></strong></h1>
                 <p class="pb-2 pt-1 text-muted">
@@ -144,7 +144,7 @@ hr.new2 {
                 <div class="col-md-6 p-3 border-right">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center">
-                            <img class="" width="100%" src="https://nonsi.kg/public/img/asd3.png" alt="Dist Photo 2" style="max-width: 170px;">
+                            <img class="" width="100%" src="{{asset('')}}/img/asd3.png" alt="Dist Photo 2" style="max-width: 170px;">
                         </div>
                         <div class="col-md-8 text-center">
                             <h6><strong><span class="info-box-text for_color">Начните продовать материалы</span></strong></h6>
@@ -155,7 +155,7 @@ hr.new2 {
                 <div class="col-md-6 p-3 border-left">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center">
-                            <img class="img-circle" src="https://nonsi.kg/public/img/asd5.png" alt="Dist Photo 2" width="100%" style="max-width: 170px;">
+                            <img class="img-circle" src="{{asset('')}}/img/asd5.png" alt="Dist Photo 2" width="100%" style="max-width: 170px;">
                         </div>
                         <div class="col-md-8 text-center">
                             <h6><strong><span class="info-box-text for_color">Начните продовать курсы</span></strong></h6>
@@ -490,7 +490,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-1.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-1.png" alt="Dist Photo 2">-->
                                     <i class="fas fa-vote-yea pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>
@@ -505,7 +505,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-3.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-3.png" alt="Dist Photo 2">-->
                                     <i class="fas fa-lock pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>
@@ -520,7 +520,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-2.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-2.png" alt="Dist Photo 2">-->
                                     <i class="fas fa-crosshairs pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>
@@ -537,7 +537,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-4.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-4.png" alt="Dist Photo 2">-->
                                     <i class="fas fa-users pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>
@@ -552,7 +552,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-66.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-66.png" alt="Dist Photo 2">-->
                                     <i class="fas fa-sitemap pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>
@@ -567,7 +567,7 @@ hr.new2 {
                         <section class="invoice" style="background: none; border: none;">
                             <div class="row">
                                 <div class="col text-center">
-                                    <!--<img class="" src="https://nonsi.kg/public/img/lead-5.png" alt="Dist Photo 2">-->
+                                    <!--<img class="" src="{{asset('')}}/img/lead-5.png" alt="Dist Photo 2">-->
                                     <i class="far fa-comments pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                                 </div>
                                 <div class="w-100"></div>

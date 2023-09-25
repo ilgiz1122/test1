@@ -66,7 +66,7 @@
                 <div class="col-md-4 col-sm-6 col-12 block23 two for_color_navedenii px-lg-2 py-lg-2">
                     <a style="display:block" href="{{ route('testpodcategory', ['for_action' => $for_action, 'id' => $test_category->id])}}"></a>
                     <div class="info-box shadow-sm for_shadow" style="background: Light;">
-                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://nonsi.kg/public/{{$test_category['img']}}"></span>
+                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="{{asset('')}}/{{$test_category['img']}}"></span>
                         <div class="info-box-content">
                             <h5><strong><span class="info-box-text for_color">
                                 @if(mb_strlen($test_category->title) < 21)
@@ -89,7 +89,7 @@
                 <div class="col-md-4 col-sm-6 col-12 block23 two for_color_navedenii px-lg-2 py-lg-2">
                     <a style="display:block" href="{{ route('podcat', $category['id'])}}"></a>
                     <div class="info-box  shadow-sm for_shadow" style="background: Light;">
-                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://nonsi.kg/public/{{$category['img']}}"></span>
+                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="{{asset('')}}/{{$category['img']}}"></span>
                         <div class="info-box-content">
                             <h5><strong><span class="info-box-text for_color">Курс</span></strong></h5>
                             <span class="info-box-number">Курстардын саны: {{$category->kol_podcategories}}</span>
@@ -108,7 +108,7 @@
 
     
 
-  <script src="https://nonsi.kg/public/admin/plugins/jquery/jquery.min.js"></script>
+  <script src="{{asset('')}}/admin/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript">
 
 var target='.block23';

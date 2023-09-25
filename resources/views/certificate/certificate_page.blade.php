@@ -26,7 +26,7 @@
                 @foreach ($certificate_shablons as $certificate_shablon)
                 <div class="col-md-4 col-sm-6 col-12 block23 two for_color_navedenii px-lg-2 py-lg-2">
                     <a style="display:block" href="{{ route('moderator_kurs_certificate_shablon', ['kurs_id' => $kurs_id, 'certificate_shablon_id' => $certificate_shablon->id]) }}"></a>
-                    <img class="" width="100%" src="https://nonsi.kg/public/storage/certificate/images/{{$certificate_shablon->img}}">
+                    <img class="" width="100%" src="{{asset('')}}/storage/certificate/images/{{$certificate_shablon->img}}">
                 </div>
                 @endforeach
             </div>

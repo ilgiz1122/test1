@@ -258,7 +258,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                         <div class="card-body p-0 class11">
                                             <div class="row align-items-center">
                                                 <div class="col-md-6">
-                                                    <img class="shadow" style="width: 100%; border-radius: 4px;" src="https://nonsi.kg/public/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}">
+                                                    <img class="shadow" style="width: 100%; border-radius: 4px;" src="{{asset('')}}/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="card-body pr-3 pl-3 pt-4 pb-3">
@@ -1392,7 +1392,7 @@ input[type=radio]:checked + .t-radio__indicator{
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6 pl-3 pr-3">
-                                <img class="d-block w-100" id="rebate_old_imag23" src="https://nonsi.kg/public/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}" style="width: 100%; border-radius: 4px;">
+                                <img class="d-block w-100" id="rebate_old_imag23" src="{{asset('')}}/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}" style="width: 100%; border-radius: 4px;">
                             </div>
                             <div class="col-md-6 pl-3 pr-3">
                                 <p class="text-muted mb-0 pt-3">Автор <span class="float-right">{{$olimpiada->title}}</span></p><hr class="mt-2">

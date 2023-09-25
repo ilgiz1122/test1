@@ -45,7 +45,7 @@
                                 <input type="number" name="dop_category" value="1" hidden="">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
-                                        <img id="img2" src="https://nonsi.kg/public/{{$materialcategory['img']}}" alt="" class="img-svg">
+                                        <img id="img2" src="{{asset('')}}/{{$materialcategory['img']}}" alt="" class="img-svg">
                                     </div>
                                     <div class="col">
                                         <div class="form-group">

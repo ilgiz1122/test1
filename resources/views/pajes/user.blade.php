@@ -45,7 +45,7 @@ input::-webkit-inner-spin-button {
                 <div class="col-md-4">
                     <div class="sticky-top mb-3">
                         <div class="card card-outline card-widget widget-user1 shadow-sm">
-                            <div class="widget-user-header text-white" style="background: url('https://nonsi.kg/public/admin/dist/img/photo1.png') center center;">
+                            <div class="widget-user-header text-white" style="background: url('{{asset('')}}/admin/dist/img/photo1.png') center center;">
                                 <h3 class="widget-user-username text-right">Менин профилим</h3>
                                 <h5 class="widget-user-desc text-right"></h5>
                             </div>
@@ -53,7 +53,7 @@ input::-webkit-inner-spin-button {
                                 @if($users->img_600_600 != null)
                                       <img class=" img-circle" src="{{ asset('public/storage/users/img_600_600/') }}/{{$users->img_600_600}}">
                                 @else
-                                      <img class="img-circle" src="https://nonsi.kg/public/admin/dist/img/user-3331256_960_720 (1).png">
+                                      <img class="img-circle" src="{{asset('')}}/admin/dist/img/user-3331256_960_720 (1).png">
                                 @endif
                                 
                             </div>
@@ -436,10 +436,10 @@ input::-webkit-inner-spin-button {
                     <div class="card">
                         <div class="card-body">
                             <p class="text-center"><b>Өнөктөш программа (Партнерская программа)</b></p>
-                            Урматтуу колдонуучу, сиз эми <b>nonsi.kg</b> аркылуу акча таба баштасаңыз болот. Өнөктөш программа бул — nonsi.kg сайтына сатып алуучуларды тартуу аркылуу акча табуунун жолу. Программага кошулуу абдан оңой жана бекер. Ар бир адам биздин өнөктөш боло алат. Ал үчүн: 
+                            Урматтуу колдонуучу, сиз эми <b>mugalim.edu.kg</b> аркылуу акча таба баштасаңыз болот. Өнөктөш программа бул — mugalim.edu.kg сайтына сатып алуучуларды тартуу аркылуу акча табуунун жолу. Программага кошулуу абдан оңой жана бекер. Ар бир адам биздин өнөктөш боло алат. Ал үчүн: 
                                 <ul class="list-unstyled">
                                     <ul style="padding-left: 25px;">
-                                      <li>Өзүңүздүн веб-сайтыңызга же интернеттеги баракчаңызга <a href="https://nonsi.kg">nonsi.kg</a> шилтемесин промо-кодуңуз менен кошо жайгаштырыңыз.</li>
+                                      <li>Өзүңүздүн веб-сайтыңызга же интернеттеги баракчаңызга <a href="https://mugalim.edu.kg">mugalim.edu.kg</a> шилтемесин промо-кодуңуз менен кошо жайгаштырыңыз.</li>
                                       <li>Блогуңузда сизге жаккан матриалдарды же курстарды сунуштаңыз.</li>
                                       <li>Биздин материалдарды же курстарды WhatsApp, Telegram, Instagram, Facebook ж.б. социалдык тармактардан бөлүшүңүз.</li>
                                     </ul>

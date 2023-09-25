@@ -75,7 +75,7 @@
                                       
                                         @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                         <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                        <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                        <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                         </div>
                                         @endforeach
                                       

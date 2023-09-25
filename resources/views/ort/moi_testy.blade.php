@@ -37,7 +37,7 @@
                                       
                                         @foreach ($materialimgs->where('materialy_id', $kupitmaterialovs->materialy->id) as $img)
                                         <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                        <img style="cursor: pointer;" class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$kupitmaterialovs->materialy['title']}}">
+                                        <img style="cursor: pointer;" class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$kupitmaterialovs->materialy['title']}}">
                                         </div>
                                         @endforeach
                                       

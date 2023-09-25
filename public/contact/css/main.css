@@ -7,22 +7,22 @@
 
 @font-face {
   font-family: Montserrat-Regular;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Regular.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Bold.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-ExtraBold;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Medium;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Medium.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Medium.ttf'); 
 }
 
 

@@ -126,7 +126,7 @@ label {
                                     </a>
 
 
-                                    <span id="copyTarget{{ $loop->iteration }}" class="hidden">https://nonsi.kg/service/kreative-taalim/resume/{{$resume['id']}}/frame2</span>  
+                                    <span id="copyTarget{{ $loop->iteration }}" class="hidden">https://mugalim.edu.kg/service/kreative-taalim/resume/{{$resume['id']}}/frame2</span>  
                                     
 
                                     <button class="btn btn-tool btn-link" title="Шилтемесин көчүрүү">

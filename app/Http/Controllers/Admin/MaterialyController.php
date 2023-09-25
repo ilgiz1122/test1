@@ -185,7 +185,7 @@ class MaterialyController extends Controller
         
            $file= public_path('storage/files/files/'.$materialies->ssylka);
            $headers = array('Content-Type: application/'.$materialies->type,);
-           return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.$materialies->title.'_0'.$user .'_(nonsi.kg)'.'.'.$materialies->type, $headers);
+           return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.$materialies->title.'_0'.$user .'_(mugalim.edu.kg)'.'.'.$materialies->type, $headers);
 
            //return response()->download(public_path('storage/files/files/'.$materialies->ssylka));  materialcategory_id  materialpodcategory_id
         }else{
@@ -209,14 +209,14 @@ class MaterialyController extends Controller
         DB::table('materialies')->where('ssylka', $materialySsylka)->increment('kol_skachek', 1);
             $file= public_path('storage/files/files/'.$materialies->ssylka);
             $headers = array('Content-Type: application/'.$materialies->type,);
-            return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.$materialies->title.'_0'.$user .'_(nonsi.kg)'.'.'.$materialies->type, $headers);
+            return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.$materialies->title.'_0'.$user .'_(mugalim.edu.kg)'.'.'.$materialies->type, $headers);
 
             
    //     if ($kupitmaterialov != null) {
      //       DB::table('materialies')->where('ssylka', $materialySsylka)->increment('kol_skachek', 1);
     //        $file= public_path('storage/files/files/'.$materialies->ssylka);
     //       $headers = array('Content-Type: application/'.$materialies->type,);
-   //         return response()->download($file, $materialies->title.'_(nonsi.kg)'.'.'.$materialies->type, $headers);
+   //         return response()->download($file, $materialies->title.'_(mugalim.edu.kg)'.'.'.$materialies->type, $headers);
    //     }else{
     //        return redirect()->back()->withSuccess2('Сатып албай эле көчүрүп алам деп ойлодуң беле ээ!');         
     //    }        

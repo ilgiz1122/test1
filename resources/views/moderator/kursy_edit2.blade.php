@@ -277,7 +277,7 @@ input::-webkit-inner-spin-button {
                             <div class="card card-widget widget-user shadow flex-fill">
                               <!-- Add the bg color to the header using any of the bg-* classes -->
                               <div class="card-header pt-0 pb-0 pl-0 pr-0" style="max-height: 196px;">
-                                <img class="" id="rebate_old_imag" style="width: 100%; max-height: 196px; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategories->img}}">
+                                <img class="" id="rebate_old_imag" style="width: 100%; max-height: 196px; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategories->img}}">
                               </div>
                               <div class="widget-user-image" style="">
                                 <img class="img-circle elevation-2" style="" src="/admin/dist/img/inform.png" alt="User Avatar">

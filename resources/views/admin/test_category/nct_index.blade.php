@@ -67,7 +67,7 @@
                     <tbody class="align-middle">
                        @foreach ($test_categories as $test_categories)
                         <tr class="todo-list2">
-                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="https://nonsi.kg/public/{{$test_categories['img']}}"></td>
+                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="{{asset('')}}/{{$test_categories['img']}}"></td>
                             <td class="align-middle">{{$test_categories['id']}}</td>
                             <td class="align-middle">{{$test_categories['title']}}</td>
                             <td class="align-middle">{{$test_categories->test_podcategory_count}} <a class="btn btn-tool w-1001  tools2" type="button" href="{{ route('nct_podcat_index', $test_categories['id'])}}"><i class="fas fa-long-arrow-alt-right" style="font-size: 1em;"></i></a></td>

@@ -162,7 +162,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-1.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-1.png" alt="Dist Photo 2">-->
                                 <i class="fas fa-vote-yea pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>
@@ -179,7 +179,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-3.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-3.png" alt="Dist Photo 2">-->
                                 <i class="fas fa-lock pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>
@@ -196,7 +196,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-2.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-2.png" alt="Dist Photo 2">-->
                                 <i class="fas fa-crosshairs pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>
@@ -214,7 +214,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-4.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-4.png" alt="Dist Photo 2">-->
                                 <i class="fas fa-users pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>
@@ -230,7 +230,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-66.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-66.png" alt="Dist Photo 2">-->
                                 <i class="fas fa-sitemap pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>
@@ -246,7 +246,7 @@
                     <section class="invoice" style="background: none; border: none;">
                         <div class="row">
                             <div class="col text-center">
-                                <!--<img class="" src="https://nonsi.kg/public/img/lead-5.png" alt="Dist Photo 2">-->
+                                <!--<img class="" src="{{asset('')}}/img/lead-5.png" alt="Dist Photo 2">-->
                                 <i class="far fa-comments pt-2 pb-3" style="color: #17a2b8; font-size: 80px;"></i>
                             </div>
                             <div class="w-100"></div>

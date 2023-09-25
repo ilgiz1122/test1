@@ -155,7 +155,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img style="width: 100%; border-radius: 4px;"
-                                            src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{ $tests['img'] }}">
+                                            src="{{asset('')}}/storage/testy/images/thumbnail/{{ $tests['img'] }}">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card-body pr-3 pl-3 pt-4 pb-3">
@@ -500,7 +500,7 @@ play_test
                                     <div class="row">
                                         <div class="col-md-6 pl-3 pr-3">
                                             <img class="d-block w-100 shadow-sm" id="rebate_old_imag23"
-                                                src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{ $tests['img'] }}"
+                                                src="{{asset('')}}/storage/testy/images/thumbnail/{{ $tests['img'] }}"
                                                 style="width: 100%; border-radius: 4px;">
                                         </div>
                                         <div class="col-md-6 pl-3 pr-3">
@@ -663,7 +663,7 @@ play_test
                                 <div class="row">
                                     <div class="col-md-6 pl-3 pr-3">
                                         <img class="d-block w-100" id="rebate_old_imag23"
-                                            src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{ $tests['img'] }}"
+                                            src="{{asset('')}}/storage/testy/images/thumbnail/{{ $tests['img'] }}"
                                             style="width: 100%; border-radius: 4px;">
                                     </div>
                                     <div class="col-md-6 pl-3 pr-3">

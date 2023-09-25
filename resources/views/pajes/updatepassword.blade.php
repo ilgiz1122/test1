@@ -27,12 +27,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card card-outline card-widget widget-user1 shadow-lg">
-                        <div class="widget-user-header text-white" style="background: url('https://nonsi.kg/public/admin/dist/img/photo1.png') center center;">
+                        <div class="widget-user-header text-white" style="background: url('{{asset('')}}/admin/dist/img/photo1.png') center center;">
                             <h3 class="widget-user-username text-right">Менин профилим</h3>
                             <h5 class="widget-user-desc text-right"></h5>
                         </div>
                         <div class="widget-user-image1">
-                            <img class="img-circle" src="https://nonsi.kg/public/admin/dist/img/user-3331256_960_720 (1).png" alt="User Avatar">
+                            <img class="img-circle" src="{{asset('')}}/admin/dist/img/user-3331256_960_720 (1).png" alt="User Avatar">
                         </div>
                         <div class="card-body box-profile mt-4">
                             <h3 class="profile-username text-center">Паролду өзгөртүү</h3>

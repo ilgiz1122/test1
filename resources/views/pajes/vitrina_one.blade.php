@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/packages/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/packages/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="{{asset('')}}/packages/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="{{asset('')}}/packages/slick/slick-theme.css">
 <style>
 .iconc{
     color: red;

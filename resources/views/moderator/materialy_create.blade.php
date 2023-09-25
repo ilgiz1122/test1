@@ -177,7 +177,7 @@ input::-webkit-inner-spin-button {
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner" style="border-top-left-radius: 4px; border-top-right-radius: 4px; width: 100%; height: 56.25%;">
                                           <div class="carousel-item active">
-                                            <img class="d-block w-100" id="rebate_old_imag" src="https://nonsi.kg/public/img/net_kartinki2.jpg" alt="First slide">
+                                            <img class="d-block w-100" id="rebate_old_imag" src="{{asset('')}}/img/net_kartinki2.jpg" alt="First slide">
                                           </div>
                                         </div>
                                     </div>

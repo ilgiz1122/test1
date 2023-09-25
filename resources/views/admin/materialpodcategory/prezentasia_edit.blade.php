@@ -47,7 +47,7 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
-                                        <img id="img2" src="https://nonsi.kg/public/{{$materialpodcategory['img']}}" alt="" class="img-svg">
+                                        <img id="img2" src="{{asset('')}}/{{$materialpodcategory['img']}}" alt="" class="img-svg">
                                     </div>
                                     <div class="col">
                                         <div class="form-group">

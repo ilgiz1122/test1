@@ -225,7 +225,7 @@
                                                             @if ($test_voprosy->img_voprosa != null)
                                                                 <div class="foto1 for_foto1 mb-2 mt-2">
                                                                     <img class="mb-2 shadow-sm"
-                                                                        src="https://nonsi.kg/public/storage/testy/images/imgvoprosa/{{ $test_voprosy->img_voprosa }}"
+                                                                        src="{{asset('')}}/storage/testy/images/imgvoprosa/{{ $test_voprosy->img_voprosa }}"
                                                                         alt=""
                                                                         style="width: 100%; border-radius: 4px;">
                                                                 </div>

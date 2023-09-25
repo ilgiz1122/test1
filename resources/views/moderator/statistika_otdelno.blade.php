@@ -115,7 +115,7 @@
                               <td style="padding-bottom: 6px;">{{$sum_pribyl/100}}  сом</td>
                               <td style="padding-bottom: 6px;">@if (intval($materialy->partnerka) == 0)<span class="h5">-</span>@else<span class="h5">+</span>@endif</td>
                               <td style="padding-right: 12px; padding-bottom: 6px;"  class="align-middle">
-                                <a class="btn btn-tool w-1001" type="button" data-toggle="modal" data-target="#modal-default2" data-img1="https://nonsi.kg/public/storage/files/images/{{$materialy['img1']}}" data-img2="https://nonsi.kg/public/storage/files/images/{{$materialy['img2']}}" data-img3="https://nonsi.kg/public/storage/files/images/{{$materialy['img3']}}"  data-title1="{{$materialy['title']}}">
+                                <a class="btn btn-tool w-1001" type="button" data-toggle="modal" data-target="#modal-default2" data-img1="{{asset('')}}/storage/files/images/{{$materialy['img1']}}" data-img2="{{asset('')}}/storage/files/images/{{$materialy['img2']}}" data-img3="{{asset('')}}/storage/files/images/{{$materialy['img3']}}"  data-title1="{{$materialy['title']}}">
                                       <span style="font-size: 1.5em;" data-bs-toggle="tooltip" data-bs-html="true" title="Посмотреть картинки">
                                         <i class="far fa-eye"></i>
                                       </span>

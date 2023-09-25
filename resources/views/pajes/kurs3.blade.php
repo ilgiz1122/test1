@@ -70,7 +70,7 @@
                                       <a style="display:block" href="{{route('kurs', $kupit['kurs_id'])}}"></a>
                                     @endif
                                     <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                        <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
+                                        <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
                                     </div>
                                     <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                         <div class="row rrttrr">
@@ -156,7 +156,7 @@
                                   <a style="display:block" href="{{route('kurs', $kupit['kurs_id'])}}"></a>
                                 @endif
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
+                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr">
@@ -246,7 +246,7 @@
                   <div class="col-md-3 d-flex px-lg-3 py-lg-2">
                         <div class="card card-widget widget-user shadow-sm flex-fill">
                             <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
+                                <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
                             </div>
                             <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                 <div class="row rrttrr">
@@ -309,7 +309,7 @@
                             <div class="col-md-3 d-flex px-lg-3 py-lg-2">
                                 <div class="card card-widget widget-user shadow-sm flex-fill">
                                     <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                        <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
+                                        <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$kupit->podcategories['img']}}">
                                     </div>
                                     <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                         <div class="row rrttrr">

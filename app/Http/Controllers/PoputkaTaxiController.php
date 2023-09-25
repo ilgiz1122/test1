@@ -172,7 +172,7 @@ class PoputkaTaxiController extends Controller
         
            $file= public_path('storage/reklama/img_org//'.$reklams->img_org);
            $headers = array('Content-Type: application/'.$type,);
-           return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.'_0'.'_(nonsi.kg)'.'.'.$type, $headers);
+           return response()->download($file, $materialcategories2.'_'.$materialpodcategories2.'_'.'_0'.'_(mugalim.edu.kg)'.'.'.$type, $headers);
     }
 
     

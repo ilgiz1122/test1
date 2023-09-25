@@ -186,7 +186,7 @@ input::-webkit-inner-spin-button {
                                         @foreach ($materialimgs as $img)
                                         <div id="{{ $loop->iteration }}" class="col-md-6 col-sm-6 col-12 px-lg-2 py-lg-2 album{{ $loop->iteration }} pt-2">
                                             <div class="foto1 for_foto1">
-                                                <img class="border" src="https://nonsi.kg/public/storage/files/images/{{$img['img1']}}" style="width: 100%; border-radius: 5px;">
+                                                <img class="border" src="{{asset('')}}/storage/files/images/{{$img['img1']}}" style="width: 100%; border-radius: 5px;">
                                                 <div class="timeline foto2 for_foto2">
                                                     <div>
                                                         <i class="fas fa-times bg-light delete-image" title="Удалить" type="button" data-id="{{$img->id}}"></i>

@@ -177,7 +177,7 @@ color1
                                     </div>
                                     <div class="col p-0 mt-1">
                                         <div id="image-holder2" class="img_hide" style="border-radius: 4px; margin-left: -8px; margin-right: -8px;">
-                                            <img src="https://nonsi.kg/public/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}" class="for_upload_img border shadow-sm m-2" style="border-radius: 4px;">
+                                            <img src="{{asset('')}}/storage/olimpiada/images/thumbnail/{{$olimpiada->img2}}" class="for_upload_img border shadow-sm m-2" style="border-radius: 4px;">
                                         </div>
                                     </div>
 

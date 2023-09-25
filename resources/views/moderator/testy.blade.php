@@ -77,7 +77,7 @@ label {
             <div class="card mb-3 todo-list2 accordion{{$test->id}}"  id="accordion{{$test->id}}">
               <div class="row no-gutters align-items-center">
                 <div class="col-md-3">
-                  <img src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test->img}}" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
+                  <img src="{{asset('')}}/storage/testy/images/thumbnail/{{$test->img}}" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
                 </div>
                 <div class="col-md-9">
                   <div class="row mr-0 ml-0  align-items-center"> 

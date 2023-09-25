@@ -77,7 +77,7 @@
                             <div class="row align-items-center">
                                 <div class="col-md-2 text-center for_moderator_img22">
                                     @if($moderator->img_600_600 == null)
-                                    <img src="https://nonsi.kg/public/admin/dist/img/user-icon.svg" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
+                                    <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
                                     @else
                                     <img src="{{ asset('public/storage/users/img_600_600/') }}/{{$moderator->img_600_600}}" class="img-circle for_moderator_img1 for_moderator_img2 shadow-sm"  alt="User Image">
                                     @endif 
@@ -127,7 +127,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('kurs', $podcategory['id'])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategory['img']}}">
+                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategory['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr1">
@@ -194,7 +194,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('kurs', $podcategory['id'])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategory['img']}}">
+                                    <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategory['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr1">
@@ -275,7 +275,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -371,7 +371,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -469,7 +469,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -565,7 +565,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -664,7 +664,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -760,7 +760,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -860,7 +860,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -956,7 +956,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -1056,7 +1056,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -1152,7 +1152,7 @@
                                               
                                                 @foreach ($materialimgs->where('materialy_id', $materialy->id) as $img)
                                                 <div class="carousel-item @if($loop->iteration === 1)active @endif">
-                                                <img class="d-block w-100" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
+                                                <img class="d-block w-100" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}" alt="{{$materialy['title']}}">
                                                 </div>
                                                 @endforeach
                                               
@@ -1245,7 +1245,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr7">
@@ -1314,7 +1314,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr7">
@@ -1388,7 +1388,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr8">
@@ -1457,7 +1457,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr8">
@@ -1531,7 +1531,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr9">
@@ -1600,7 +1600,7 @@
                             <div class="card shadow-sm flex-fill two block23">
                               <a style="display:block" href="{{route('opentest', ['for_action' => $test->dop_category, 'id' => $test->id])}}"></a>
                                 <div class="card-header pt-0 pb-0 pl-0 pr-0" >
-                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$test['img']}}">
+                                  <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$test['img']}}">
                                 </div>
                                 <div class="card-body pr-2 pl-2 pb-0" style="padding-top: 10px;">
                                     <div class="row rrttrr9">

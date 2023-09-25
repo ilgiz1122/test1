@@ -68,7 +68,7 @@
                     
                     <div class="block23 info-box shadow-sm for_shadow" style="background: Light;">
                         <a style="display:block" href="{{ route('vsematerialy', ['for_action' => $for_action, 'id' => $materialpodcategory['id']])}}"></a>
-                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://nonsi.kg/public/{{$materialpodcategory['img']}}"></span>
+                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="{{asset('')}}/{{$materialpodcategory['img']}}"></span>
                         <div class="info-box-content">
                             <h5><strong><span class="info-box-text for_color">
                                 @if(mb_strlen($materialpodcategory->title) < 21)

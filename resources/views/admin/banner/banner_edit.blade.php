@@ -101,7 +101,7 @@
                         <div class="sticky-top mb-3">
                                 <div class="card mb-2 bg-gradient-dark" style="border-radius: 10px;">
                                     <div class="img3">
-                                        <img class="card-img-top img2" id="rebate_old_imag" style="border-radius: 10px;" src="https://nonsi.kg/public/storage/banner/{{$banner->img}}">
+                                        <img class="card-img-top img2" id="rebate_old_imag" style="border-radius: 10px;" src="{{asset('')}}/storage/banner/{{$banner->img}}">
                                     </div>
                                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                                     <h2 class="text-white "><b id="div">{{$banner->title}}</b></h2>

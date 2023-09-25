@@ -66,7 +66,7 @@
                 <div class="col-md-4 col-sm-6 col-12 block23 two for_color_navedenii px-lg-2 py-lg-2">
                     <a style="display:block" href="{{ route('vsetesty', ['for_action' => $for_action, 'id' => $test_podcategory->id])}}"></a>
                     <div class="info-box shadow-sm for_shadow" style="background: Light;">
-                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="https://nonsi.kg/public/{{$test_podcategory['img']}}"></span>
+                        <span class="info-box-icon"><img class="img-svg mt-2 mb-2 mr-3 ml-2"  src="{{asset('')}}/{{$test_podcategory['img']}}"></span>
                         <div class="info-box-content">
                             <h4><strong><span class="info-box-text for_color truncate2">{{$test_podcategory['title']}}</span></strong></h4>
                             <span class="info-box-number">Тесттердин саны: {{$test_podcategory->testy_count}}</span>

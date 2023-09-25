@@ -94,7 +94,7 @@ label {
             <div class="card mb-3 todo-list2 accordion{{$olimpiada->id}}"  id="accordion{{$olimpiada->id}}">
               <div class="row no-gutters align-items-center">
                 <div class="col-md-3">
-                    <img src="https://nonsi.kg/public/img/net_kartinki2.jpg" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
+                    <img src="{{asset('')}}/img/net_kartinki2.jpg" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
                 </div>
 
                 <div class="col-md-9">
@@ -307,7 +307,7 @@ label {
             <div class="card mb-3 todo-list2 accordion{{$olimpiada2->id}}"  id="accordion{{$olimpiada2->id}}">
               <div class="row no-gutters align-items-center">
                 <div class="col-md-3">
-                    <img src="https://nonsi.kg/public/img/net_kartinki2.jpg" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
+                    <img src="{{asset('')}}/img/net_kartinki2.jpg" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
                 </div>
 
                 <div class="col-md-9">

@@ -132,7 +132,7 @@
                           <div class="row">
                               <div class="col-auto">
                                 @if($comment->user->img_600_600 == null)
-                                    <img src="https://nonsi.kg/public/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
+                                    <img src="{{asset('')}}/admin/dist/img/user-icon.svg" class="img-circle shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
                                 @else
                                     <img src="{{ asset('public/storage/users/img_160_160/') }}/{{$comment->user->img_160_160}}" class="img-circle  shadow-sm"  alt="{{$comment->user->name}}" width="100%"  style="max-width: 80px;">
                                 @endif 
@@ -182,7 +182,7 @@
                         <div class="card-body pt-3 pb-2 pl-3 pr-3">
                                 @if($podcategories['video'] != null)
                                  <video oncontextmenu="return false;" controls controlsList="nodownload" width="100%" height="100%" style="border-radius: 3px;">
-                                      <source id="video" src="https://nonsi.kg/public/storage/kursy/reklamnoevideo/{{$podcategories->video}}" type="video/mp4">
+                                      <source id="video" src="{{asset('')}}/storage/kursy/reklamnoevideo/{{$podcategories->video}}" type="video/mp4">
                                           Ваш браузер не поддерживает видео tag.
                                   </video>
                                 @endif

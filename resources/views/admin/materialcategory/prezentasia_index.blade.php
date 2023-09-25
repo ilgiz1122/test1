@@ -132,7 +132,7 @@
                                   </span>
                                 </div>
                             </td>
-                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="https://nonsi.kg/public/{{$materialcategories['img']}}"></td>
+                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="{{asset('')}}/{{$materialcategories['img']}}"></td>
                             <td class="align-middle">{{$materialcategories['id']}}</td>
                             <td class="align-middle">{{$materialcategories['title']}}</td>
                             <td class="align-middle">{{$materialcategories->materialpodcategory_count}} <a class="btn btn-tool w-1001  tools2" type="button" href="{{ route('material_podcategory', ['for_action' => $for_action, 'id' => $materialcategories['id']])}}"><i class="fas fa-long-arrow-alt-right" style="font-size: 1em;"></i></a></td>

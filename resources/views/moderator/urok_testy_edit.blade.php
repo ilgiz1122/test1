@@ -320,7 +320,7 @@
                                                                             </div>
                                                                             <input id="for_img{{$loop->iteration}}" type="number" name="for_img{{$loop->iteration}}" value="@if($test_voprosy[$key]->img_voprosa != null){{1}}@else{{0}}@endif" hidden="">
                                                                             <div class="foto1 for_foto1 mb-2 mt-2">
-                                                                                <img id="rebate_old_image{{$loop->iteration}}" class="mb-2 shadow-sm optional" src="@if($test_voprosy[$key]->img_voprosa != null)https://nonsi.kg/public/storage/testy/images/imgvoprosa/{{$test_voprosy[$key]->img_voprosa}}@endif" alt="" style="width: 100%; border-radius: 4px;">
+                                                                                <img id="rebate_old_image{{$loop->iteration}}" class="mb-2 shadow-sm optional" src="@if($test_voprosy[$key]->img_voprosa != null){{asset('')}}/storage/testy/images/imgvoprosa/{{$test_voprosy[$key]->img_voprosa}}@endif" alt="" style="width: 100%; border-radius: 4px;">
                                                                                 <div class="timeline foto2 for_foto2">
                                                                                     <div>
                                                                                         <i class="fas fa-times bg-light remove-img2" title="Удалить" type="button"></i>

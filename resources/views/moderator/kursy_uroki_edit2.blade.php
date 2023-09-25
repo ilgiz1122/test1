@@ -248,10 +248,10 @@ input::-webkit-inner-spin-button {
                             <div class="card card-widget widget-user shadow flex-fill">
                               <!-- Add the bg color to the header using any of the bg-* classes -->
                               <div class="card-header pt-0 pb-0 pl-0 pr-0" style="max-height: 196px;">
-                                <img class="" id="rebate_old_imag" style="width: 100%; max-height: 196px; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/img/net_kartinki2.jpg">
+                                <img class="" id="rebate_old_imag" style="width: 100%; max-height: 196px; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/img/net_kartinki2.jpg">
                               </div>
                               <div class="widget-user-image" style="">
-                                <img class="img-circle elevation-2" style="" src="https://nonsi.kg/public/admin/dist/img/inform.png" alt="User Avatar">
+                                <img class="img-circle elevation-2" style="" src="{{asset('')}}/admin/dist/img/inform.png" alt="User Avatar">
                               </div>
                               <div class="card-body pr-3 pl-3 pb-3" style="padding-top: 35px;">
                                 
@@ -322,7 +322,7 @@ input::-webkit-inner-spin-button {
 <!-- для инпут тайп файл --> 
 
 <!-- для текстового редактора --> 
-<script src="https://nonsi.kg/public/admin/plugins/summernote/summernote-bs4.min.js"></script>   
+<script src="{{asset('')}}/admin/plugins/summernote/summernote-bs4.min.js"></script>   
 <script>
 
 $(function () {

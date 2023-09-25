@@ -33,7 +33,7 @@
               <!-- Add the bg color to the header using any of the bg-* classes -->
               <div class="card-header pt-0 pb-0 pl-0 pr-0 block23">
                  <a style="display:block" href=""></a>
-                <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="https://nonsi.kg/public/storage/olimpiada/images/thumbnail/{{$olimpiada['img']}}">
+                <img class="" style="width: 100%; border-top-right-radius: 4px; border-top-left-radius: 4px;" src="{{asset('')}}/storage/olimpiada/images/thumbnail/{{$olimpiada['img']}}">
               </div>
               <!--<div class="widget-user-image">
                 <img class="img-circle elevation-2" style="" src="/admin/dist/img/inform.png" alt="User Avatar">

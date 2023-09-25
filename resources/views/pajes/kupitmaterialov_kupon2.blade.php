@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/packages/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/packages/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="{{asset('')}}/packages/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="{{asset('')}}/packages/slick/slick-theme.css">
 <style>
 .iconc{
     color: red;
@@ -106,14 +106,14 @@
                     <section class="slider-for slider mt-0" style="margin-left: -10px; margin-right: -10px;">
                         @foreach ($materialimgs as $img)
                         <div style="border-radius: 10px;">
-                            <img class="border" style="border-radius: 5px; width: 100%;" src="https://nonsi.kg/public/storage/files/images/{{$img['img1']}}">
+                            <img class="border" style="border-radius: 5px; width: 100%;" src="{{asset('')}}/storage/files/images/{{$img['img1']}}">
                         </div>
                         @endforeach
                     </section>
                     <section class="slider-nav slider mt-3" style="margin-left: -10px; margin-right: -10px;">
                         @foreach ($materialimgs as $img)
                         <div>
-                            <img class="border shadow-sm" style="border-radius: 5px; width: 100%;" src="https://nonsi.kg/public/storage/files/thumbnail/{{$img['img2']}}">
+                            <img class="border shadow-sm" style="border-radius: 5px; width: 100%;" src="{{asset('')}}/storage/files/thumbnail/{{$img['img2']}}">
                         </div>
                         @endforeach
                     </section>

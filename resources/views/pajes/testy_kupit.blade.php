@@ -156,7 +156,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                         <div class="card-body p-0 class11">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <img style="width: 100%; border-radius: 4px;" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$tests['img']}}">
+                                                    <img style="width: 100%; border-radius: 4px;" src="{{asset('')}}/storage/testy/images/thumbnail/{{$tests['img']}}">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="card-body pr-3 pl-3 pt-4 pb-3">
@@ -435,7 +435,7 @@ input[type=radio]:checked + .t-radio__indicator{
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-6 pl-3 pr-3">
-                                    <img class="d-block w-100 shadow-sm" id="rebate_old_imag23" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$tests['img']}}" style="width: 100%; border-radius: 4px;">
+                                    <img class="d-block w-100 shadow-sm" id="rebate_old_imag23" src="{{asset('')}}/storage/testy/images/thumbnail/{{$tests['img']}}" style="width: 100%; border-radius: 4px;">
                                 </div>
                                 <div class="col-md-6 pl-3 pr-3">
                                 @if (Auth::user()->balance < $tests['price'])
@@ -563,7 +563,7 @@ input[type=radio]:checked + .t-radio__indicator{
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6 pl-3 pr-3">
-                                <img class="d-block w-100" id="rebate_old_imag23" src="https://nonsi.kg/public/storage/testy/images/thumbnail/{{$tests['img']}}" style="width: 100%; border-radius: 4px;">
+                                <img class="d-block w-100" id="rebate_old_imag23" src="{{asset('')}}/storage/testy/images/thumbnail/{{$tests['img']}}" style="width: 100%; border-radius: 4px;">
                             </div>
                             <div class="col-md-6 pl-3 pr-3">
                                 <p class="text-muted mb-0 pt-3">Автор <span class="float-right">{{$tests->user['name']}}</span></p><hr class="mt-2">

@@ -65,7 +65,7 @@
                                                     <input type="text"
                                                         style="border: none; border-radius: 0%; width: 70px;"
                                                         class=" form-control-primary border-bottom form-txt-primary p-l-0"
-                                                        value=".nonsi.kg" readonly>
+                                                        value=".mugalim.edu.kg" readonly>
                                                 </div>
                                             </div>
                                         </div>

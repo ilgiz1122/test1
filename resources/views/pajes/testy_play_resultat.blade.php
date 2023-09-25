@@ -281,7 +281,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                                         @if($test_voprosy->text_voprosa != null)<p class="mb-0">{!!nl2br($test_voprosy->text_voprosa)!!}</p>@endif
                                                         @if($test_voprosy->img_voprosa != null)
                                                         <div class="foto1 for_foto1 mb-2 mt-2">
-                                                            <img class="mb-2 shadow-sm" src="https://nonsi.kg/public/storage/testy/images/imgvoprosa/{{$test_voprosy->img_voprosa}}" alt="" style="width: 100%; border-radius: 4px;">
+                                                            <img class="mb-2 shadow-sm" src="{{asset('')}}/storage/testy/images/imgvoprosa/{{$test_voprosy->img_voprosa}}" alt="" style="width: 100%; border-radius: 4px;">
                                                         </div>
                                                         @endif
                                                         @foreach ($test_otvety->where('test_voprosy_id', $test_voprosy->id) as $variant)
@@ -478,7 +478,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                                                 @if($test_voprosy->text_voprosa != null)<p class="mb-0">{{$test_voprosy->text_voprosa}}</p>@endif
                                                                 @if($test_voprosy->img_voprosa != null)
                                                                 <div class="foto1 for_foto1 mb-2 mt-2">
-                                                                    <img class="mb-2 shadow-sm" src="https://nonsi.kg/public/storage/testy/images/imgvoprosa/{{$test_voprosy->img_voprosa}}" alt="" style="width: 100%; border-radius: 4px;">
+                                                                    <img class="mb-2 shadow-sm" src="{{asset('')}}/storage/testy/images/imgvoprosa/{{$test_voprosy->img_voprosa}}" alt="" style="width: 100%; border-radius: 4px;">
                                                                 </div>
                                                                 @endif
                                                                 @foreach ($test_otvety->where('test_voprosy_id', $test_voprosy->id) as $variant)

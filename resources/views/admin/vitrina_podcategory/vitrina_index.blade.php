@@ -67,7 +67,7 @@
                     <tbody class="align-middle">
                        @foreach ($materialpodcategories as $materialpodcategories)
                         <tr class="todo-list2">
-                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="https://nonsi.kg/public/{{$materialpodcategories['img']}}"></td>
+                            <td class="align-middle"><img class="img-svg mt-2 mb-2 mr-3 ml-2" src="{{asset('')}}/{{$materialpodcategories['img']}}"></td>
                             <td class="align-middle">{{$materialpodcategories['id']}}</td>
                             <td class="align-middle">{{$materialpodcategories['title']}}</td>
                             <td class="align-middle">{{$materialpodcategories->materialy_count}} <a class="btn btn-tool w-1001  tools2" type="button" href=""><i class="fas fa-long-arrow-alt-right" style="font-size: 1em;"></i></a></td>

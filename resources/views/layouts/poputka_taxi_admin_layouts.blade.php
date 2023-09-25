@@ -105,7 +105,7 @@
                                         </a>
                                     </li>
                                     {{-- <li class="ssdd">
-                                        <a href="https://poputka-taxi.nonsi.kg/"
+                                        <a href="https://poputka-taxi.mugalim.edu.kg/"
                                             class="waves-effect waves-dark">
                                             <span class="pcoded-micon">
                                                 <i class="fas fa-map-signs"></i>

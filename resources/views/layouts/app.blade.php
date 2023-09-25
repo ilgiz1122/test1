@@ -9,7 +9,7 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome <link rel="stylesheet" href="{{ asset('') }}/plugins/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://nonsi.kg/admin/fontawesome-free-6.1.1-web/css/all.css"><link rel="stylesheet" href="https://nonsi.kg/admin/fontawesome-free-6.1.1-web/css/all.css"> {{ asset('/') }}--> 
+  <!-- Font Awesome <link rel="stylesheet" href="{{ asset('') }}/plugins/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="{{ asset('') }}/admin/fontawesome-free-6.1.1-web/css/all.css"><link rel="stylesheet" href="{{ asset('') }}/admin/fontawesome-free-6.1.1-web/css/all.css"> {{ asset('/') }}--> 
   
   
   <!-- Ionicons -->
@@ -143,7 +143,7 @@
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <div class="media">
-              <img src="https://nonsi.kg/admin/dist/img/user3.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('') }}/admin/dist/img/user3.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -157,7 +157,7 @@
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <div class="media">
-              <img src="https://nonsi.kg/admin/dist/img/user3.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('') }}/admin/dist/img/user3.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -807,7 +807,7 @@
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<!-- Bootstrap 4<script src="https://nonsi.kg/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<!-- Bootstrap 4<script src="{{ asset('') }}/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- ChartJS -->
@@ -816,7 +816,7 @@
 <script src="{{ asset('/admin/plugins/sparklines/sparkline.js') }}"></script>
 <!-- JQVMap -->
 <script src="{{ asset('/admin/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
-{{-- <script src="https://nonsi.kg../admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script> --}}
+{{-- <script src="https://mugalim.edu.kg../admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script> --}}
 <!-- jQuery Knob Chart -->
 <script src="{{ asset('/admin/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
 <!-- daterangepicker -->

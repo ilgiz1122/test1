@@ -620,7 +620,7 @@
                                             <input type="text" class="for_akcia3 pt-5 pb-5 pl-15 pr-0 text-right" value="" style="width: 5px;">
                                         </div>
                                         <div class="col pl-0">
-                                            <input type="text" class="for_akcia2 pt-5 pb-5 pl-5 pr-15" placeholder="https://poputka-taxi.nonsi.kg" name="sait">
+                                            <input type="text" class="for_akcia2 pt-5 pb-5 pl-5 pr-15" placeholder="https://poputka-taxi.mugalim.edu.kg" name="sait">
                                             <div class="invalid-feedback">Район / шаарды тандаңыз</div>
                                         </div>
                                     </div>

@@ -34,20 +34,20 @@ return [
     'facebook' => [    
           'client_id' => env('FACEBOOK_CLIENT_ID'),  
           'client_secret' => env('FACEBOOK_CLIENT_SECRET'),  
-          'redirect' => 'https://nonsi.kg/auth/facebook/callback', 
+          'redirect' => 'https://mugalim.edu.kg/auth/facebook/callback', 
     ],
 
 
     'google' => [    
       'client_id' => env('GOOGLE_CLIENT_ID'),  
       'client_secret' => env('GOOGLE_CLIENT_SECRET'),  
-      'redirect' => 'https://nonsi.kg/auth/google/callback',
+      'redirect' => 'https://mugalim.edu.kg/auth/google/callback',
     ],
 
     'instagram' => [    
       'client_id' => env('INSTAGRAM_CLIENT_ID'),  
       'client_secret' => env('INSTAGRAM_CLIENT_SECRET'),  
-      'redirect' => 'https://nonsi.kg/auth/instagram/callback',
+      'redirect' => 'https://mugalim.edu.kg/auth/instagram/callback',
     ],
 
 ];

@@ -158,7 +158,7 @@ label {
             <div class="card mb-3 todo-list2 accordion{{$podcategory->id}}"  id="accordion{{$podcategory->id}}">
               <div class="row no-gutters align-items-center">
                 <div class="col-md-3">
-                  <img src="https://nonsi.kg/public/storage/kursy/images/thumbnail/{{$podcategory->img}}" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
+                  <img src="{{asset('')}}/storage/kursy/images/thumbnail/{{$podcategory->img}}" class="card-img shadow-sm" alt="..." style="border-radius: 4px;">
                 </div>
                 <div class="col-md-9">
                   <div class="row mr-0 ml-0  align-items-center"> 

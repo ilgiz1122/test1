@@ -4,22 +4,22 @@
 <style>
     @font-face {
   font-family: Montserrat-Regular;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Regular.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Bold.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-ExtraBold;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-ExtraBold.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Medium;
-  src: url('https://nonsi.kg/public/contact/fonts/montserrat/Montserrat-Medium.ttf'); 
+  src: url('{{asset('')}}/contact/fonts/montserrat/Montserrat-Medium.ttf'); 
 }
 
 /*---------------------------------------------*/
@@ -381,11 +381,11 @@ textarea.input100 {
 <!--===============================================================================================-->
 
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/contact/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('')}}/contact/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/contact/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('')}}/contact/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="https://nonsi.kg/public/contact/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('')}}/contact/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 
 
@@ -453,7 +453,7 @@ textarea.input100 {
         	
         	<div class="row wrap-contact100 pt-5 pb-5 mt-2">
         		<div class="col-md-6 contact100-pic js-tilt text-center" data-tilt>
-								<img src="https://nonsi.kg/public/contact/images/img-01.png" alt="IMG">
+								<img src="{{asset('')}}/contact/images/img-01.png" alt="IMG">
         		</div>
         		<div class="col-md-6  mb-2">
               @if (\Auth::user())
@@ -506,18 +506,18 @@ textarea.input100 {
         </div><!-- /.container-fluid -->
     </section><!-- /.content -->
 <!--===============================================================================================-->
-	<script src="https://nonsi.kg/public/contact/vendor/bootstrap/js/popper.js"></script>
+	<script src="{{asset('')}}/contact/vendor/bootstrap/js/popper.js"></script>
 <!--===============================================================================================-->
-	<script src="https://nonsi.kg/public/contact/vendor/select2/select2.min.js"></script>
+	<script src="{{asset('')}}/contact/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="https://nonsi.kg/public/contact/vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="{{asset('')}}/contact/vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
 <!--===============================================================================================-->
-	<script src="https://nonsi.kg/public/contact/js/main.js"></script>
+	<script src="{{asset('')}}/contact/js/main.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>

@@ -102,7 +102,7 @@
                         <div class="sticky-top mb-3">
                                 <div class="card mb-2 bg-gradient-dark" style="border-radius: 10px;">
                                     <div class="img3">
-                                        <img class="card-img-top img2" id="rebate_old_imag" style="border-radius: 10px;" src="https://nonsi.kg/public/img/net_kartinki2.jpg">
+                                        <img class="card-img-top img2" id="rebate_old_imag" style="border-radius: 10px;" src="{{asset('')}}/img/net_kartinki2.jpg">
                                     </div>
                                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                                     <h2 class="text-white "><b id="div">Тема рекламы</b></h2>

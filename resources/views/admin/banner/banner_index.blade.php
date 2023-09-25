@@ -124,7 +124,7 @@
                                   </div>
                               </td>
                             <td class="align-middle">
-                                <a class="btn btn-tool w-1002  tools2" type="button" data-toggle="modal" data-target="#staticBackdrop2" data-title="{{$banner['title']}}" data-opisanie="{{$banner['opisanie']}}" data-img="https://nonsi.kg/public/storage/banner/{{$banner['img']}}" data-ssylka="{{$banner['ssylka']}}">
+                                <a class="btn btn-tool w-1002  tools2" type="button" data-toggle="modal" data-target="#staticBackdrop2" data-title="{{$banner['title']}}" data-opisanie="{{$banner['opisanie']}}" data-img="{{asset('')}}/storage/banner/{{$banner['img']}}" data-ssylka="{{$banner['ssylka']}}">
                                     <i class="far fa-eye" style="font-size: 1.2em;"></i>
                                 </a>
                                 <a class="btn btn-tool tools2" href="{{route('banner_edit', $banner['id'])}}" data-bs-toggle="tooltip" data-bs-placement="left" title="Редактировать">
@@ -181,7 +181,7 @@
                 <div class="modal-content" style="border-radius: 10px;">
                     <div class="card mb-0 bg-gradient-dark" style="border-radius: 10px;">
                         <div class="img3">
-                            <img class="card-img-top img2" id="var_img" style="border-radius: 10px;" src="https://nonsi.kg/public/img/net_kartinki2.jpg">
+                            <img class="card-img-top img2" id="var_img" style="border-radius: 10px;" src="{{asset('')}}/img/net_kartinki2.jpg">
                         </div>
                       <div class="card-img-overlay d-flex flex-column justify-content-end">
                         <h2 class="text-white "><b class="var_title">Тема рекламы</b></h2>
