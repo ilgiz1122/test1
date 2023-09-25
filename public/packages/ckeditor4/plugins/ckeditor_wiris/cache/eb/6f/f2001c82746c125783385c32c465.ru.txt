@@ -1,0 +1,1 @@
+{"result":{"text":"x over y squared"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"box enclose space space space space space open parentheses negative 7 close parentheses to the power of 0 space space space space space end enclose space space space space space box enclose space space space space space open parentheses negative 7 to the power of 0 close parentheses space space space space space end enclose"},"status":"ok"}

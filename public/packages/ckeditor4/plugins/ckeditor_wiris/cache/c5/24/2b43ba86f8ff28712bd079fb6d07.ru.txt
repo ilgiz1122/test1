@@ -1,0 +1,1 @@
+{"result":{"text":"italic X squared plus italic y squared plus 2 italic z equals italic a squared italic b"},"status":"ok"}

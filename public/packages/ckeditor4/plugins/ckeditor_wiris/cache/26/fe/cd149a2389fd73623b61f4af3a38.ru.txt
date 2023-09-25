@@ -1,0 +1,1 @@
+{"result":{"text":"box enclose blank over blank space 1 space литр space ряженканын space массасы space space space end enclose space space space space box enclose blank over blank space space 1 space литр space кефирдин space массасы space space space end enclose"},"status":"ok"}

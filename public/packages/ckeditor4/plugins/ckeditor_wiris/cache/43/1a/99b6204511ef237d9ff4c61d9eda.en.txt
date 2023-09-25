@@ -1,0 +1,1 @@
+{"result":{"text":"2 x plus 3 y plus 6 z equals 48"},"status":"ok"}

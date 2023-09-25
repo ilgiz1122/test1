@@ -1,0 +1,1 @@
+{"result":{"text":"space space space space space space space space space space space space space space space x greater than 0\nbox enclose space space space space 2 over x plus 2 over x space space space end enclose space space space space box enclose space space space space 3 over x space space space space end enclose"},"status":"ok"}

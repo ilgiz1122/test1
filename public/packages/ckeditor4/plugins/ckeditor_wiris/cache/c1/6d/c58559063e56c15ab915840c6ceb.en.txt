@@ -1,0 +1,1 @@
+{"result":{"text":"3 x plus 11 y equals 60 semicolon space space space x comma space y space element of Z to the power of plus semicolon space space space space x plus y equals ?"},"status":"ok"}

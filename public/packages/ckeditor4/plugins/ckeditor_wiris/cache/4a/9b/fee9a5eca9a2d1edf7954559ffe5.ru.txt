@@ -1,0 +1,1 @@
+{"result":{"text":"c over b equals 3"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"box enclose space space space space open parentheses negative 2 over 3 close parentheses to the power of negative 2 end exponent space space space space space end enclose space space space space box enclose space space space space space open parentheses 3 over 2 close parentheses squared space space space space space space end enclose"},"status":"ok"}

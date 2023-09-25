@@ -1,0 +1,1 @@
+{"result":{"text":"x comma space y space element of Z to the power of plus"},"status":"ok"}

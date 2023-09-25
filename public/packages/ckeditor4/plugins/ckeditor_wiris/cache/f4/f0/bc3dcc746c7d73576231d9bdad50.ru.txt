@@ -1,0 +1,1 @@
+{"result":{"text":"5 over 8 times square root of 5 over 8 end root"},"status":"ok"}

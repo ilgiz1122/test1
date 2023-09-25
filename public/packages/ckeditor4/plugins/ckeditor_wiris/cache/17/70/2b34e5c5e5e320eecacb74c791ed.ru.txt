@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator 4 c minus 3 b over denominator b end fraction equals space ?"},"status":"ok"}

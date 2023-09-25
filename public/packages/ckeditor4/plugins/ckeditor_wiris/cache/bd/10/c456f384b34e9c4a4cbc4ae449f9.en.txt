@@ -1,0 +1,1 @@
+{"result":{"text":"a c greater than 0 comma space space space b a less than 0"},"status":"ok"}
