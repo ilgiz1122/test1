@@ -325,7 +325,7 @@ input[type=radio]:checked + .t-radio__indicator{
                             </div>
                             <div class="card card-body pt-2 pb-0  mb-2 mt-4 two">
                                 <div class="row align-items-center  block23">
-                                    <a href="https://t.me/nonsi_kg?text="></a>
+                                    <a href="https://t.me/ilgiz1209?text="></a>
                                     <div class="col-auto">
                                         <span style="font-size: 4em; color: #17a2b8;">
                                           <i class="fab fa-telegram-plane"></i>
@@ -333,7 +333,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                     </div>
                                     <div class="col">
                                         <p class="text-muted text-center mb-0 pt-2"><b>Telegram</b></p>
-                                        <p class="text-muted text-center mb-0 pb-2"><a href="https://t.me/nonsi_kg">nonsi_kg</a></p>
+                                        <p class="text-muted text-center mb-0 pb-2"><a href="https://t.me/ilgiz1209">ilgiz1209</a></p>
                                     </div>
                                 </div>
                             </div>                        
@@ -402,7 +402,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                     </div>
                                     <div class="card card-body pt-0 pb-0 mb-0 mt-2 two">
                                         <div class="row align-items-center  block23">
-                                            <a href="https://t.me/nonsi_kg?text="></a>
+                                            <a href="https://t.me/ilgiz1209?text="></a>
                                             <div class="col-auto">
                                                 <span style="font-size: 3em; color: #17a2b8;">
                                                   <i class="fab fa-telegram-plane"></i>
@@ -469,7 +469,7 @@ input[type=radio]:checked + .t-radio__indicator{
                             </div>
                             <div class="card card-body pt-0 pb-0 mb-0 mt-2 two">
                                 <div class="row align-items-center  block23">
-                                    <a href="https://t.me/nonsi_kg?text="></a>
+                                    <a href="https://t.me/ilgiz1209?text="></a>
                                     <div class="col-auto">
                                         <span style="font-size: 3em; color: #17a2b8;">
                                           <i class="fab fa-telegram-plane"></i>
@@ -530,7 +530,7 @@ input[type=radio]:checked + .t-radio__indicator{
                                     </div>
                                     <div class="card card-body pt-0 pb-0 mb-0 mt-2 two">
                                         <div class="row align-items-center  block23">
-                                            <a href="https://t.me/nonsi_kg?text="></a>
+                                            <a href="https://t.me/ilgiz1209?text="></a>
                                             <div class="col-auto">
                                                 <span style="font-size: 3em; color: #17a2b8;">
                                                   <i class="fab fa-telegram-plane"></i>

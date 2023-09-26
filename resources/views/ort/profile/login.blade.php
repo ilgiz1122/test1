@@ -14,7 +14,7 @@
 
                 <div class="card card-outline card-primary">
                     <div class="card-header text-center">
-                        <a class="h1"><b>НоНси</b></a>
+                        <a class="h1"><b>Mugalim.edu.kg</b></a>
                     </div>
                     <div class="card-body">
                         <p class="login-box-msg">Кирүү үчүн электрондук почтаңызды (аккаунтуңузду) жана паролунузду киргизиңиз</p>

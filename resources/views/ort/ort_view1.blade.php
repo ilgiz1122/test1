@@ -146,7 +146,7 @@
         <div class="row pt-5">
             <div class="col"></div>
             <div class="col-auto">
-                <p class="mb-0  text-center">Android платформасы үчүн уюлдук тиркеме<a href="{{ asset('/files/НоНси - ОРТ.apk') }}" class=" text-center btn btn btn-outline-info pr-4 pl-4 ml-5 mr-5" download style="border-radius: 30px"><i class="fas fa-arrow-to-bottom pr-3"></i> Жүктөп алуу</a></p> 
+                <p class="mb-0  text-center">Android платформасы үчүн уюлдук тиркеме<a href="{{ asset('/files/Mugalim.edu.kg - ОРТ.apk') }}" class=" text-center btn btn btn-outline-info pr-4 pl-4 ml-5 mr-5" download style="border-radius: 30px"><i class="fas fa-arrow-to-bottom pr-3"></i> Жүктөп алуу</a></p> 
                 
             </div>
             <div class="col"></div>

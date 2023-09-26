@@ -195,7 +195,7 @@ label {
                                     <p class="form-control form-control-border color1 pr-0 pl-1 pt-2 pb-0 mb-0"><i class="fab fa-telegram-plane pr-2" style="color: green; font-size: 20px;"></i> https://t.me/</p>
                                   </div>
                                   <div class="col pl-0 pr-0">
-                                    <input name="for_telegram" value="{{ $olimpiada->telegram }}" type="text" class="form-control form-control-border  pr-1 pl-0 pt-2 pb-1 color1" placeholder="nonsi_kg">
+                                    <input name="for_telegram" value="{{ $olimpiada->telegram }}" type="text" class="form-control form-control-border  pr-1 pl-0 pt-2 pb-1 color1" placeholder="ilgiz1209">
                                   </div>
                                 </div>
                                 <div class="pt-2 pb-2 pr-2 pl-2 mb-2">

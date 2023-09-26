@@ -575,7 +575,7 @@ label {
                                       <p class="form-control form-control-border color11 color1 pr-0 pl-1 pt-2 pb-0 mb-0"><i class="fab fa-telegram-plane pr-3" style="color: green;"></i> https://t.me/</p>
                                     </div>
                                     <div class="col pl-0">
-                                      <input name="telegram" value="{{ $podcategory->telegram }}" id="for_telefram_input" type="text" class="form-control form-control-border pr-1 pl-0 pt-2 pb-1 color1 color11" placeholder="nonsi_kg">
+                                      <input name="telegram" value="{{ $podcategory->telegram }}" id="for_telefram_input" type="text" class="form-control form-control-border pr-1 pl-0 pt-2 pb-1 color1 color11" placeholder="ilgiz1209">
                                       <div class="invalid-tooltip">Толтуруңуз, болбосо өчүрүңүз!</div>
                                     </div>
                                   </div>

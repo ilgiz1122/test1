@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>НоНси - @yield('title')</title>
+    <title>Mugalim.edu.kg - @yield('title')</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -341,7 +341,7 @@
             <a href="/" class="brand-link">
                 <img src="{{asset('')}}/admin/dist/img/logo1.jpg" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light"><strong>НоНси - ОРТ</strong></span>
+                <span class="brand-text font-weight-light"><strong>Mugalim.edu.kg - ОРТ</strong></span>
             </a>
             <!-- Sidebar -->
             <div class="sidebar">
@@ -636,7 +636,7 @@
                         </div>
                         <div class="card card-body pt-0 pb-0 mb-0 mt-2 two" style="cursor: pointer;">
                             <div class="row align-items-center  block23">
-                                <a href="https://t.me/nonsi_kg?text="></a>
+                                <a href="https://t.me/ilgiz1209?text="></a>
                                 <div class="col-auto">
                                     <span style="font-size: 1.5em; color: #17a2b8;">
                                         <i class="fab fa-telegram-plane"></i>

@@ -75,7 +75,7 @@
                         <a href="index.html">
                             {{-- <img class="img-fluid" src="{{ asset('/portfolio/files/assets/images/logo1.png') }}"
                                 alt="Theme-Logo" /> --}}
-                                НоНси - ОРТ
+                                Mugalim.edu.kg - ОРТ
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             {{-- <i class="feather icon-menu icon-toggle-right"></i> --}}

@@ -23,7 +23,7 @@
         <div class="modal-content">
                 <div class="card card-outline card-primary mb-0">
                     <div class="card-header text-center">
-                        <a href="/" class="h1"><b>НоНси </b></a>
+                        <a href="/" class="h1"><b>Mugalim.edu.kg </b></a>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 2rem;">
                             <span aria-hidden="true">&times;</span>
                         </button>
