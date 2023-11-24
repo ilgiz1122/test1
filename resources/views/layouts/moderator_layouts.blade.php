@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="{{asset('')}}/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="{{asset('')}}/admin/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="{{asset('')}}/admin/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('')}}/packages/barryvdh/elfinder/css/elfinder.min.css">
   <link href="{{asset('')}}/admin/dist/css/colorbox.css" rel="stylesheet">
@@ -532,6 +533,7 @@
 <!-- daterangepicker -->
 <script src="{{asset('')}}/admin/plugins/moment/moment.min.js"></script>
 <script src="{{asset('')}}/admin/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="{{asset('')}}/admin/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="{{asset('')}}/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->

@@ -15,8 +15,8 @@
     RewriteRule ^ %1 [L,R=301]
 
     # Redirect Dynamic Subdomains to Main Domain
-    RewriteCond %{HTTP_HOST} ^(.+)\.mugalim\.edu\.kg$ [NC]
-    RewriteRule ^ http://mugalim.edu.kg%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^(.+)\.olimpiada\.edu\.kg$ [NC]
+    RewriteRule ^ http://olimpiada.edu.kg%{REQUEST_URI} [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

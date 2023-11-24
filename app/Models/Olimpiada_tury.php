@@ -31,4 +31,9 @@ class Olimpiada_tury extends Model
     {
         return $this->belongsTo('App\Models\Olimpiada', 'olimpiada_id');
     }
+
+    public function olimpiada_tury_class()
+    {
+        return $this->hasMany('App\Models\OlimpiadaTuryKlass', 'olimpiada_tury_id');
+    }
 }

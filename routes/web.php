@@ -140,7 +140,7 @@ Route::get('/', function () {return view('welcome');});
 
 Auth::routes(); 
 
-
+Route::post('/login_2', [App\Http\Controllers\HomeController::class, 'login2'])->name('login2');
 
 
 
@@ -180,7 +180,7 @@ Route::get('/vse_testy_nct', [App\Http\Controllers\HomeController::class, 'vse_t
 
 Route::get('/vse_materialy/{for_action}', [App\Http\Controllers\HomeController::class, 'vse_materialy'])->name('vse_materialy');
 
-Route::get('/olimpiada', [App\Http\Controllers\OlimpiadaController::class, 'olimpiada'])->name('olimpiada');
+Route::get('/{locale}/olimpiadas', [App\Http\Controllers\OlimpiadaController::class, 'olimpiada'])->name('olimpiada');
 Route::get('/olimpiada/{olimpiada_id}/info', [App\Http\Controllers\OlimpiadaController::class, 'olimpiada_info'])->name('olimpiada_info');
 Route::get('/olimpiada/info/raion/{id}', [App\Http\Controllers\OlimpiadaController::class, 'olimpiada_raion']);
 Route::post('/olimpiada/{olimpiada_id}/registrasia', [App\Http\Controllers\OlimpiadaController::class, 'olimpiada_registrasia_user'])->name('olimpiada_registrasia_user');
@@ -700,6 +700,18 @@ Route::middleware(['role:moderator|admin'])->prefix('moderator_panel')->group(fu
 
 	Route::put('/olimpiada/{olimpiada_id}/tury/{olimpiada_tury_id}/data_okonchanie_tura_1', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_update_data_okonchanie_tura_1'])->name('moderator_olimpiada_tury_update_data_okonchanie_tura_1');
 
+	Route::get('/olimpiada/{olimpiada_id}/tury/{olimpiada_tury_id}/class', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class'])->name('moderator_olimpiada_tury_class');
+	Route::put('/olimpiada/{olimpiada_id}/tury/{olimpiada_tury_id}/class_vybrate', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_vybrate'])->name('moderator_olimpiada_tury_class_vybrate');
+	Route::put('/olimpiada/tury/{class_id}/class_status1', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_update_status1'])->name('moderator_olimpiada_tury_class_update_status1');
+	Route::put('/olimpiada/tury/{class_id}/class_status2', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_update_status2'])->name('moderator_olimpiada_tury_class_update_status2');
+	Route::get('/olimpiada/{olimpiada_id}/tury/{olimpiada_tury_id}/class/{olimpiada_tury_class_id}', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_predmet'])->name('moderator_olimpiada_tury_class_predmet');
+	Route::put('/olimpiada/{olimpiada_id}/tury/{olimpiada_tury_id}/class/{olimpiada_tury_class_id}/predmet_vybrate', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_predmet_vybrate'])->name('moderator_olimpiada_tury_class_predmet_vybrate');
+	
+
+	
+	Route::put('/olimpiada/tury/{olimpiada_tury_class_predmet_id}/class_predmet_status1', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_predmet_update_status1'])->name('moderator_olimpiada_tury_class_predmet_update_status1');
+	Route::put('/olimpiada/tury/{olimpiada_tury_class_predmet_id}/class_predmet_status2', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_class_predmet_update_status2'])->name('moderator_olimpiada_tury_class_predmet_update_status2');
+
 
 
 	Route::get('/olimpiada/{id}/tury', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_index'])->name('moderator_olimpiada_tury_index');
@@ -710,10 +722,10 @@ Route::middleware(['role:moderator|admin'])->prefix('moderator_panel')->group(fu
 	Route::put('/olimpiada/update_phone_for_telegram/{id}', [App\Http\Controllers\OlimpiadaController::class, 'moderator_olimpiada_update_phone_for_telegram'])->name('moderator_olimpiada_update_phone_for_telegram');
 	Route::put('/olimpiada/update_status1/{id}', [App\Http\Controllers\OlimpiadaController::class, 'moderator_olimpiada_update_status1'])->name('moderator_olimpiada_update_status1');
 	Route::put('/olimpiada/update_status0/{id}', [App\Http\Controllers\OlimpiadaController::class, 'moderator_olimpiada_update_status0'])->name('moderator_olimpiada_update_status0');
-	Route::put('/olimpiada/tury/{olimpiada_tury_id}/test_vybrate', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_tests_vybrate'])->name('moderator_olimpiada_tury_tests_vybrate');
+	Route::put('/olimpiada/tury/{olimpiada_tury_class_predmet_id}/test_vybrate', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_tests_vybrate'])->name('moderator_olimpiada_tury_tests_vybrate');
 	Route::put('/olimpiada/tury/{olimpiada_tury_id}/update_status1', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_update_status1'])->name('moderator_olimpiada_tury_update_status1');
 	Route::put('/olimpiada/tury/{olimpiada_tury_id}/update_status2', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_update_status2'])->name('moderator_olimpiada_tury_update_status2');
-	Route::get('/olimpiada/tury/{olimpiada_tury_id}/test_izyat', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_tests_izyat'])->name('moderator_olimpiada_tury_tests_izyat');
+	Route::get('/olimpiada/tury/{olimpiada_tury_class_predmet_id}/test_izyat', [App\Http\Controllers\OlimpiadaTuryController::class, 'moderator_olimpiada_tury_tests_izyat'])->name('moderator_olimpiada_tury_tests_izyat');
 	Route::get('/olimpiada/{olimpiada_id}/plus_user/{user_id}', [App\Http\Controllers\OlimpiadaController::class, 'moderator_olimpiada_plus_user'])->name('moderator_olimpiada_plus_user');
 
 	Route::get('/olimpiada/status1_user/{olimpiada_registrasia_user_id}', [App\Http\Controllers\OlimpiadaController::class, 'moderator_olimpiada_status1_user'])->name('moderator_olimpiada_status1_user');

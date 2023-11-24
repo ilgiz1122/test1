@@ -12,10 +12,40 @@ use App\Models\Test_category;
 use App\Models\Test_podcategory;
 use App\Models\Banner;
 use App\Models\Poputka_taxi_prilojenie_name;
-
-
+use Laravel\Fortify\Fortify;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Auth;
 class HomeController extends Controller
 {
+
+    public function login2(Request $request)
+    {
+        
+
+        $user = User::where('email', $request->email)
+        ->orWhere('phone', $request->email)
+        ->first();
+
+        if ( $user) {
+            if (Hash::check($request->password, $user->password)) {
+                Auth::login($user, true);
+                return redirect('/');
+            }else{
+                return redirect()->back()->with([
+                    'success2' => 'Пароль туура эмес',
+                    'email' => $request->email
+                ]);
+            }
+        }else{
+            return redirect()->back()->with([
+                'success2' => 'Мындай колдонуучу жок',
+                'email' => $request->email
+            ]);
+        }
+
+        
+    }
     /**
      * Create a new controller instance.
      *
@@ -119,6 +149,8 @@ class HomeController extends Controller
     {
        return view('ort.profile.login');
     }
+
+
     
     public function ort_contact()
     {

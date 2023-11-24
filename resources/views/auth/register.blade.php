@@ -93,7 +93,7 @@
                         </button>
                     </div>
                     <div class="card-body" style="padding-top: 10px;">
-                        <h5 class="mb-0"><p class="login-box-msg" style="padding-bottom: 10px;">Катталуу</p></h5>
+                        <h5 class="mb-0"><p class="login-box-msg" style="padding-bottom: 10px;">Каттауу</p></h5>
                         <div class="row mb-2">
                             <!--<div class="col mr-4 ml-3"><a href="{{ route('auth.instagram') }}" class="btn btn-danger btn-block" style="border-radius: 50%; font-size: 27px;"><i class="fab fab fa-instagram"></i></a></div>
                             <div class="col mr-4 ml-3"><a href="{{ route('auth.facebook') }}" class="btn btn-outline-primary btn-block" style="border-radius: 50%; font-size: 27px;"><i class="fab fa-facebook-f"></i></a></div>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="card-footer" style="padding-top: 0px;">
                         <h8 class="mb-0">
-                             <a href="{{ route('login') }}" class="text-center">Кирүү <i class="pr-2 fas fa-arrow-right fa-sm pt-2"></i></a>  эгер мурда катталган болсоңуз
+                             <a href="{{ route('login') }}" class="text-center">Кирүү <i class="pr-2 fas fa-arrow-right fa-sm pt-2"></i></a>  эгер мурда каттлган болсоңуз
                         </h8>
                     </div>
                 </div>

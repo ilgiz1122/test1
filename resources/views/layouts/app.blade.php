@@ -1,7 +1,12 @@
 
 
 <!DOCTYPE html>
-<html lang="ru">
+@php
+  $currentLocale = app()->getLocale();
+  app()->setLocale('kg');
+  $newLocale = app()->getLocale();
+@endphp
+<html lang="{{$newLocale}}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -309,7 +314,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('olimpiada')}}" class="nav-link">
+
+                <a href="{{ route('olimpiada', $newLocale)}}" class="nav-link">
                     <i class="nav-icon fas fa-file-certificate"></i>
                     <p>Олимпиада</p>
                 </a>

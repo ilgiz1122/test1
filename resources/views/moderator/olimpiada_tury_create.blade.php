@@ -126,16 +126,16 @@ color1
                                                 <span class="res"></span>
                                             <div class="invalid-feedback">Баасын көрсөтүңүз!</div>
                                         </div>
-                                        <div class="form-group col-md-6 mb-0 required mt-5 align-items-top">
-                                            <p class="required mb-0">{{$olimpiada_tur_count + 1}}-турдун башталыш датасы</p>
+                                        <div class="form-group col-md-6 mb-0 mt-5 align-items-top">
+                                            <p class=" mb-0">Блоктун түсү</p>
                                             <div class="row align-items-top hover1">
                                               <div class="col-auto pr-0">
-                                                <p class="form-control form-control-border color1 pr-1 pl-1 pt-2 pb-0 mb-0"><i class="fas fa-calendar pr-1 btn-tool"></i></p>
+                                                <p class="form-control form-control-border color1 pr-1 pl-1 pt-2 pb-0 mb-0"><i class="fas fa-fill-drip"></i></p>
                                               </div>
                                               <div class="col pl-0">
-                                                <input name="data_nachalo_tura" value="{{ old('data_nachalo_tura') }}" type="text" class="form-control color1 form-control-border  pr-1 pl-1 pt-2 pb-1" data-inputmask='"mask": "99/99/9999  (99:99)"' data-mask placeholder="25/05/2025  (16:00)" required="true">
+                                                <input name="color" value="{{ old('color') }}" type="text" class="form-control color1 form-control-border my-colorpicker1 colorpicker-element pr-1 pl-1 pt-2 pb-1" placeholder="Блоктун түсү" data-colorpicker-id="1" data-original-title="" title="">
                                                 <span class="res"></span>
-                                                <div class="invalid-feedback">{{$olimpiada_tur_count + 1}}-турдун башталыш датасын көрсөтүңүз!</div>
+                                                <div class="invalid-feedback">Блоктун түсү</div>
                                               </div>
                                             </div>
                                         </div>
@@ -199,7 +199,7 @@ color1
 
 
   <script type="text/javascript">
-
+$('.my-colorpicker1').colorpicker();
 
 $('#opisanie_text').show();
 $('#opisanie_text_summernot').hide();

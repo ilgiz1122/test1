@@ -33,7 +33,7 @@
             @endif
 
 
-            <h5 class="pt-3 mb-2">Все курсы</h5>
+            <h5 class="pt-3 mb-2">Все курсы </h5>
             <div class="row">
                 @foreach ($categories as $category)
                 

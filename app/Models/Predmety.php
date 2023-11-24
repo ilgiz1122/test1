@@ -13,4 +13,9 @@ class Predmety extends Model
     {
         return $this->hasMany('App\Models\Olimpiada', 'predmet');
     }
+
+    public function olimpiada_tury_class_predmety()
+    {
+        return $this->hasMany('App\Models\OlimpiadaTuryKlassPredmety', 'predmety_id');
+    }
 }

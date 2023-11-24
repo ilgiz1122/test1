@@ -2052,11 +2052,17 @@ $('.delete-imgs').on('click', function(e){
     });
 });
 
+            setInterval(function(){ 
+                $('.ytp-chrome-top').remove();
+            console.log('dd');
+            $('iframe').contents().remove('.ytp-chrome-top')
+            }, 1000); 
 
 
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })  
+    $('[data-toggle="tooltip"]').tooltip();
+    
+  });
 $(document).on('click', '.play_test', function(){    
     $('#modal-default2').modal('show')
 });

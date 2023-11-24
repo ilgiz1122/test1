@@ -47,6 +47,11 @@ class Test extends Model
     {
         return $this->hasMany('App\Models\Test_voprosy', 'test_id');
     }
+
+    public function olim_predmet()
+    {
+        return $this->hasMany('App\Models\OlimpiadaTuryKlassPredmety', 'test_id');
+    }
     
     public function user()
     {

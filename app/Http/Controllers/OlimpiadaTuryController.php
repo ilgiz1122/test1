@@ -12,6 +12,10 @@ use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\Test;
+use App\Models\OlimpiadaTuryKlass;
+use App\Models\OlimpiadaTuryKlassPredmety;
+use App\Models\Klassy;
+use App\Models\Predmety;
 
 class OlimpiadaTuryController extends Controller
 {
@@ -69,6 +73,155 @@ class OlimpiadaTuryController extends Controller
         }
     }
 
+    public function moderator_olimpiada_tury_class($olimpiada_id, $olimpiada_tury_id)
+    {
+        
+        $olimpiada = Olimpiada::where('id', $olimpiada_id)->where('user_id', \Auth::user()->id)->first();
+        $olimpiada_tury = Olimpiada_tury::where('id', $olimpiada_tury_id)->where('olimpiada_id', $olimpiada->id)->first();
+        $class = OlimpiadaTuryKlass::where('olimpiada_tury_id', $olimpiada_tury_id)->orderBy('klassy_id')->get();
+        
+        $list_klass = DB::table('klassies')->whereNotIn('id', $class->pluck('klassy_id'))->get();
+        if ($olimpiada_tury != null) {
+            return view('moderator.olimpoada_tury_class', [
+                'olimpiada' => $olimpiada,
+                'olimpiada_tury' => $olimpiada_tury,
+                'class' => $class,
+                'list_klass' => $list_klass,
+            ]);
+        }else{
+            return redirect()->back()->withSuccess('Хотель схитрить!');
+        }
+    }
+
+    public function moderator_olimpiada_tury_class_vybrate(Request $request, $olimpiada_id, $olimpiada_tury_id)
+    {
+        $olimpiada = Olimpiada::where('id', $olimpiada_id)->first();
+
+        if ($olimpiada->user_id != \Auth::user()->id) {
+            return redirect()->back()->withSuccess2('Класс не выбрано!');
+        }else{
+            foreach ($request->class_id as $rclass) {
+                $class = OlimpiadaTuryKlass::where('olimpiada_tury_id', $olimpiada_tury_id)->where('klassy_id', $rclass)->first();
+                if ($class != null) {
+                    # code...
+                }else{
+                    OlimpiadaTuryKlass::create([
+                        'olimpiada_id' => $olimpiada_id,
+                        'olimpiada_tury_id' => $olimpiada_tury_id,
+                        'klassy_id' => $rclass,
+                    ]);
+                }
+            }
+            
+            return redirect()->back()->withSuccess('Класс создан');
+        }
+    }
+
+    public function moderator_olimpiada_tury_class_update_status1(Request $request, $class_id)
+    {
+        
+        $request->validate([
+            'status' => 'required|numeric',
+        ]);
+        DB::table('olimpiada_tury_klasses')->where('id', $class_id)->update([
+            'status' => $request->status,
+        ]);
+        return redirect()->back()->withSuccess('Класс стал активным.');
+    }
+    public function moderator_olimpiada_tury_class_update_status2(Request $request, $class_id)
+    {
+        
+        $request->validate([
+            'status2' => 'required|numeric',
+        ]);
+        DB::table('olimpiada_tury_klasses')->where('id', $class_id)->update([
+            'status' => $request->status2,
+        ]);
+        return redirect()->back()->withSuccess2('Класс стал не активным.');
+    }
+
+    public function moderator_olimpiada_tury_class_predmet_update_status1(Request $request, $olimpiada_tury_class_predmet_id)
+    {
+        
+        $request->validate([
+            'status' => 'required|numeric',
+        ]);
+        DB::table('olimpiada_tury_klass_predmeties')->where('id', $olimpiada_tury_class_predmet_id)->update([
+            'status' => $request->status,
+        ]);
+        return redirect()->back()->withSuccess('Предмет стал активным.');
+    }
+    public function moderator_olimpiada_tury_class_predmet_update_status2(Request $request, $olimpiada_tury_class_predmet_id)
+    {
+        
+        $request->validate([
+            'status2' => 'required|numeric',
+        ]);
+        DB::table('olimpiada_tury_klass_predmeties')->where('id', $olimpiada_tury_class_predmet_id)->update([
+            'status' => $request->status2,
+        ]);
+        return redirect()->back()->withSuccess2('Предмет стал не активным.');
+    }
+
+    
+
+    
+    public function moderator_olimpiada_tury_class_predmet($olimpiada_id, $olimpiada_tury_id, $olimpiada_tury_class_id)
+    {
+        $olimpiada = Olimpiada::where('id', $olimpiada_id)->where('user_id', \Auth::user()->id)->first();
+        $olimpiada_tury = Olimpiada_tury::where('id', $olimpiada_tury_id)->where('olimpiada_id', $olimpiada->id)->first();
+        $olimpiada_tury_class = OlimpiadaTuryKlass::where('id', $olimpiada_tury_class_id)->first();
+        $olimpiada_tury_class_predmets = OlimpiadaTuryKlassPredmety::where('olimpiada_tury_klass_id', $olimpiada_tury_class_id)->get();
+        $predmets = Predmety::whereNotIn('id', $olimpiada_tury_class_predmets->pluck('predmety_id'))->get();
+        $test = Test::where('user_id', \Auth::user()->id)->get();
+
+        if ($olimpiada_tury != null) {
+            return view('moderator.olimpoada_tury_class_predmet', [
+                'olimpiada' => $olimpiada,
+                'olimpiada_tury' => $olimpiada_tury,
+                'olimpiada_tury_class' => $olimpiada_tury_class,
+                'olimpiada_tury_class_predmets' => $olimpiada_tury_class_predmets,
+                'predmets' => $predmets,
+                'test' => $test,
+            ]);
+        }else{
+            return redirect()->back()->withSuccess('Хотель схитрить!');
+        }
+    }
+
+
+    
+    public function moderator_olimpiada_tury_class_predmet_vybrate(Request $request, $olimpiada_id, $olimpiada_tury_id, $olimpiada_tury_class_id)
+    {
+        $olimpiada = Olimpiada::where('id', $olimpiada_id)->first();
+
+        if ($olimpiada->user_id != \Auth::user()->id) {
+            return redirect()->back()->withSuccess2('Предмет не выбрано!');
+        }else{
+            foreach ($request->predmet_id as $predmet) {
+                $class = OlimpiadaTuryKlassPredmety::where('olimpiada_tury_klass_id', $olimpiada_tury_class_id)->where('predmety_id', $predmet)->first();
+                if ($class != null) {
+                    # code...
+                }else{
+                    OlimpiadaTuryKlassPredmety::create([
+                        'olimpiada_id' => $olimpiada_id,
+                        'olimpiada_tury_id' => $olimpiada_tury_id,
+                        'klassy_id' => $olimpiada_tury_class_id,
+                        'olimpiada_tury_klass_id' => $olimpiada_tury_class_id,
+                        'predmety_id' => $predmet,
+                        'test_id' => 0,
+                    ]);
+                }
+            }
+            
+            return redirect()->back()->withSuccess('Предмет создан');
+        }
+    }
+
+
+
+
+
 
     public function moderator_olimpiada_tury_update_data_okonchanie_tura_1 ($olimpiada_id, $olimpiada_tury_id, Request $request)
     {
@@ -119,56 +272,15 @@ class OlimpiadaTuryController extends Controller
                 'title' => 'required|string',
                 'opisanie' => 'required|string',
                 'price' => 'required|numeric',
-                'data_nachalo_tura' => 'required|string',
+                'color' => 'nullable|string',
             ]);
 
-            $data_nachalo_tura2 = preg_replace('~[^0-9]+~','', $request->data_nachalo_tura);
-
-            $kun1 = substr($data_nachalo_tura2, 0, -10);
-            $ai1 = substr($data_nachalo_tura2, 2, -8);
-            $god1 = substr($data_nachalo_tura2, 4, -4);
-            $saat1 = substr($data_nachalo_tura2, 8, 2);
-            $minuta1 = substr($data_nachalo_tura2, 10, 2);
-
-            $data_num3 = $god1.'-'.$ai1.'-'.$kun1.' '.$saat1.':'.$minuta1.':'.'00';
-            $data_num = strtotime($data_num3);
-
-            if ($olimpiada_tury->data_okonchanie_tura != null) {
-                $data_okonchanie_tura22 = $olimpiada_tury->data_okonchanie_tura - $olimpiada_tury->nachalo_zdachi_tura;
-                $data_num5 = $data_num + $data_okonchanie_tura22;
-
-                DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
-                    'title' => $request->title,
-                    'opisanie' => $request->opisanie,
-                    'price' => $request->price * 100,
-                    'nachalo_zdachi_tura' => $data_num5,
-                ]);
-            }else{
-                DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
-                    'title' => $request->title,
-                    'opisanie' => $request->opisanie,
-                    'price' => $request->price * 100,
-                    'nachalo_zdachi_tura' => $data_num,
-                ]);
-            }
-
-            $olimpiada_tury0011 = Olimpiada_tury::where('olimpiada_id', $olimpiada_id)->where('status', 1)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-            $i = 1;
-            foreach($olimpiada_tury0011 as $olimpiada_tury_id0011)
-            {
-                DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id0011->id)->update([
-                    'tur_number' => $i++,
-                ]);
-            }
-
-
-            $olimpiada_tury00112 = Olimpiada_tury::where('olimpiada_id', $olimpiada_id)->where('status', 0)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-            foreach($olimpiada_tury00112 as $olimpiada_tury_id00112)
-            {
-                DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id00112->id)->update([
-                    'tur_number' => 0,
-                ]);
-            }
+            $olimpiada_tury->update([
+                'title' => $request->title,
+                'opisanie' => $request->opisanie,
+                'price' => $request->price * 100,
+                'color' => $request->color,
+            ]);
 
             return redirect()->route('moderator_olimpiada_tury_index', $olimpiada_id)->withSuccess('Олимпиаданын туру ийгиликтүү өзгөртүлдү');
         }else{
@@ -183,65 +295,29 @@ class OlimpiadaTuryController extends Controller
             'title' => 'required|string',
             'opisanie' => 'required|string',
             'price' => 'required|numeric',
-            'data_nachalo_tura' => 'required|string',
+            'color' => 'nullable|string',
         ]);
-
-        $data_nachalo_tura2 = preg_replace('~[^0-9]+~','', $request->data_nachalo_tura);
-
-        $kun1 = substr($data_nachalo_tura2, 0, -10);
-        $ai1 = substr($data_nachalo_tura2, 2, -8);
-        $god1 = substr($data_nachalo_tura2, 4, -4);
-        $saat1 = substr($data_nachalo_tura2, 8, 2);
-        $minuta1 = substr($data_nachalo_tura2, 10, 2);
-
-        $data_num3 = $god1.'-'.$ai1.'-'.$kun1.' '.$saat1.':'.$minuta1.':'.'00';
-        $data_num = strtotime($data_num3);
-        
+        $olimpiada_tury0011 = Olimpiada_tury::where('olimpiada_id', $olimpiada_id)->count();
         $olimpiada_tur = new Olimpiada_tury([
             'olimpiada_id' => $olimpiada_id,
-            'tur_number' => 0,
+            'tur_number' => $olimpiada_tury0011 + 1,
             'title' => $request->title,
             'opisanie' => $request->opisanie,
             'price' => $request->price * 100,
-            'nachalo_zdachi_tura' => $data_num,
+            'color' => $request->color,
         ]);
         $olimpiada_tur->save();
-
-        $olimpiada_tury0011 = Olimpiada_tury::where('olimpiada_id', $olimpiada_id)->where('status', 1)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-        $i = 1;
-        foreach($olimpiada_tury0011 as $olimpiada_tury_id0011)
-        {
-            DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id0011->id)->update([
-                'tur_number' => $i++,
-            ]);
-        }
-
-
-        $olimpiada_tury00112 = Olimpiada_tury::where('olimpiada_id', $olimpiada_id)->where('status', 0)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-        foreach($olimpiada_tury00112 as $olimpiada_tury_id00112)
-        {
-            DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id00112->id)->update([
-                'tur_number' => 0,
-            ]);
-            }
         
         return redirect()->route('moderator_olimpiada_tury_index', $olimpiada_id)->withSuccess('Олимпиаданын туру ийгиликтүү кошулду');
     }
 
-    public function moderator_olimpiada_tury_tests_vybrate(Request $request, $olimpiada_tury_id)
+    public function moderator_olimpiada_tury_tests_vybrate(Request $request, $olimpiada_tury_class_predmet_id)
     {
-        $olimpiada_tury = Olimpiada_tury::where('id', $olimpiada_tury_id)->first();
-        $olimpiada = Olimpiada::where('id', $olimpiada_tury->olimpiada_id)->first();
-
-        if ($olimpiada->user_id != \Auth::user()->id) {
-            return redirect()->back()->withSuccess2('Тест не выбрано!');
-        }else{
-            DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
-                'test_id' => $request->test_id,
-                'data_okonchanie_tura' => NULL,
-            ]);
-            return redirect()->back()->withSuccess('Тест выбрано. Дата окончания тура установлено по умолчанию');
-        }
+        DB::table('olimpiada_tury_klass_predmeties')->where('id', $olimpiada_tury_class_predmet_id)->update([
+            'test_id' => $request->test_id,
+            'end' => NULL,
+        ]);
+        return redirect()->back()->withSuccess('Тест выбрано. Дата окончания тура установлено по умолчанию');
     }
 
     public function moderator_olimpiada_tury_update_status1(Request $request, $olimpiada_tury_id)
@@ -257,24 +333,11 @@ class OlimpiadaTuryController extends Controller
         if ($olimpiada->user_id != \Auth::user()->id) {
             
         }else{
-            if ($olimpiada_tury->test_id != null) {
+            if ($olimpiada_tury != null) {
                 DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
                     'status' => $request->status,
                 ]);
-
-                $olimpiada_tury0011 = Olimpiada_tury::where('olimpiada_id', $olimpiada->id)->where('status', 1)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-                $i = 1;
-                foreach($olimpiada_tury0011 as $olimpiada_tury_id0011)
-                {
-                    DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id0011->id)->update([
-                        'tur_number' => $i++,
-                    ]);
-                }
-
-
                 return redirect()->back()->withSuccess('Тур стал активным.');
-            }else{
-               return redirect()->back()->withSuccess2('Алгач тест кошуу керек!'); 
             }
         }
     }
@@ -298,14 +361,6 @@ class OlimpiadaTuryController extends Controller
                 DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
                     'status' => $request->status2,
                 ]);
-
-                $olimpiada_tury00112 = Olimpiada_tury::where('olimpiada_id', $olimpiada->id)->where('status', 0)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-                foreach($olimpiada_tury00112 as $olimpiada_tury_id00112)
-                {
-                    DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id00112->id)->update([
-                        'tur_number' => 0,
-                    ]);
-                }
                 return redirect()->back()->withSuccess2('Тур стал не активным!');
             }else{
                 DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
@@ -314,36 +369,22 @@ class OlimpiadaTuryController extends Controller
                 DB::table('olimpiadas')->where('id', $olimpiada_tury->olimpiada_id)->update([
                     'status' => 0,
                 ]);
-
-                $olimpiada_tury00112 = Olimpiada_tury::where('olimpiada_id', $olimpiada->id)->where('status', 0)->orderBy('nachalo_zdachi_tura', 'asc')->get();
-                foreach($olimpiada_tury00112 as $olimpiada_tury_id00112)
-                {
-                    DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id00112->id)->update([
-                        'tur_number' => 0,
-                    ]);
-                }
                 return redirect()->back()->withSuccess2('Тур и олимпиада (потому что вы сделали не актвным первый тур олимпиады) стал не активным!');
             }
         }
     }
 
-    public function moderator_olimpiada_tury_tests_izyat($olimpiada_tury_id)
+    public function moderator_olimpiada_tury_tests_izyat($olimpiada_tury_class_predmet_id)
     {
-        $olimpiada_tury = Olimpiada_tury::where('id', $olimpiada_tury_id)->first();
-        $olimpiada = Olimpiada::where('id', $olimpiada_tury->olimpiada_id)->first();
+        DB::table('olimpiada_tury_klass_predmeties')->where('id', $olimpiada_tury_class_predmet_id)->update([
+            'test_id' => 0,
+            'status' => 0,
+            'end' => NULL,
+        ]);
 
-        if ($olimpiada->user_id != \Auth::user()->id) {
-            return redirect()->back()->withSuccess2('У вас нет доступа!');
-        }else{
-            DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
-                'test_id' => NULL,
-                'status' => 0,
-                'data_okonchanie_tura' => NULL,
-            ]);
-
-            return redirect()->back()->withSuccess('Тест был изъят!');
-        }    
+        return redirect()->back()->withSuccess('Тест был изъят!');    
     }
+
 
 
     /**

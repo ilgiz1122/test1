@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-900.eot');
+    src: url('MuseoSansCyrl-900d41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-900.woff2') format('woff2'),
+        url('MuseoSansCyrl-900.woff') format('woff'),
+        url('MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-300.eot');
+    src: url('MuseoSansCyrl-300d41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-300.woff2') format('woff2'),
+        url('MuseoSansCyrl-300.woff') format('woff'),
+        url('MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-100.eot');
+    src: url('MuseoSansCyrl-100d41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-100.woff2') format('woff2'),
+        url('MuseoSansCyrl-100.woff') format('woff'),
+        url('MuseoSansCyrl-100.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-500Italic.eot');
+    src: url('MuseoSansCyrl-500Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-500Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-500Italic.woff') format('woff'),
+        url('MuseoSansCyrl-500Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-300Italic.eot');
+    src: url('MuseoSansCyrl-300Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-300Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-300Italic.woff') format('woff'),
+        url('MuseoSansCyrl-300Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-700Italic.eot');
+    src: url('MuseoSansCyrl-700Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-700Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-700Italic.woff') format('woff'),
+        url('MuseoSansCyrl-700Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-100Italic.eot');
+    src: url('MuseoSansCyrl-100Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-100Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-100Italic.woff') format('woff'),
+        url('MuseoSansCyrl-100Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-700.eot');
+    src: url('MuseoSansCyrl-700d41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-700.woff2') format('woff2'),
+        url('MuseoSansCyrl-700.woff') format('woff'),
+        url('MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-500.eot');
+    src: url('MuseoSansCyrl-500d41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-500.woff2') format('woff2'),
+        url('MuseoSansCyrl-500.woff') format('woff'),
+        url('MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSansCyrl-900Italic.eot');
+    src: url('MuseoSansCyrl-900Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-900Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-900Italic.woff') format('woff'),
+        url('MuseoSansCyrl-900Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+

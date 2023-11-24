@@ -27,13 +27,18 @@ class OlimpiadaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function olimpiada()
+    public function olimpiada($locale)
     {
+        if (! in_array($locale, ['ru', 'kg', 'en'])) {
+            \App::setLocale('kg');
+        }
+        \App::setLocale($locale);
+
         $time = strtotime(date("Y-m-d H:i:s"));
         $olimpiadas = Olimpiada::where('status', 1)->withCount('olimpiada_tury2')->orderBy('created_at', 'desc')->paginate(16);
         $olimpiada_tury = Olimpiada_tury::where('status', 1)->where('nachalo_zdachi_tura', '>', $time)->orderBy('tur_number', 'asc')->select('nachalo_zdachi_tura', 'olimpiada_id', 'tur_number')->get()->unique('olimpiada_id');
 
-       return view('pajes.vse_olimpiady_2', [
+       return view('olimpiada.index2', [
         'olimpiadas' => $olimpiadas,
         'olimpiada_tury' => $olimpiada_tury,
        ]);

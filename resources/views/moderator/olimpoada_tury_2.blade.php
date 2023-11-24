@@ -144,14 +144,6 @@
                           <div class="card-body pr-2 pl-2 pt-3 pb-1">
                             <h5 class="card-title"><b>{{$olimpiada->tur_number}}-тур.</b> {{$olimpiada->title}}</h5>
                             <p class="card-text mb-0">
-                              <small class="text-muted">Башталышы: {{date('d.m.Y', $olimpiada->nachalo_zdachi_tura)}} ({{date('H:i', $olimpiada->nachalo_zdachi_tura)}})</small>
-                              <span class="float-right">
-                                <a class="d-block w-100 btn btn-tool collapsed" data-toggle="collapse" href="#collapse{{$loop->iteration}}" aria-expanded="false">
-                                  <span style="font-size: 1.2em;" title="Настройки">
-                                    <i class="fal fa-cog"></i>
-                                  </span>
-                                </a>
-                              </span>
                             </p>
                           </div>
                         
@@ -220,153 +212,13 @@
 
 
                           
-                          @if($olimpiada->dostup == 0)
                           <div class="col-auto tools2 for_num_id1"> 
-                                <a class="btn btn-tool" href="{{ route('moderator_kurs_urok_zadanie_create', ['kurs_id'=>$olimpiada->id, 'urok_id'=>$olimpiada->id]) }}">
-                                  <span style="font-size: 1.2em;" title="Задание">
+                                <a class="btn btn-tool" href="{{ route('moderator_olimpiada_tury_class', ['olimpiada_id'=>$olimpiada01->id, 'olimpiada_tury_id'=>$olimpiada->id]) }}">
+                                  <span style="font-size: 1.2em;" title="Классы">
                                     <i class="fas fa-users"></i>
                                   </span>
                                 </a>
-                          </div>
-                          @else
-                          <div class="col-auto tools2 for_num_id1 dropup">
-                            <a class="btn btn-tool" role="button" data-toggle="dropdown" id="dropdownMenuOffset{{$loop->iteration}}" type="button"  data-offset="120,0">
-                              <span style="font-size: 1.2em;" title="Задание">
-                                <i class="fas fa-users" style="color: #28a745;"></i>
-                              </span>
-                            </a>
-                            <!-- dropdown-menu -->
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right pt-0 pb-0 keep_open">
-                              <p class="h3 dropdown-item-title text-center pt-2 pb-2 pr-2 pl-2">Задание</p>
-                              <div class="dropdown-divider mb-0 mt-0"></div>
-                              <a class="dropdown-item" href="{{ route('moderator_kurs_urok_zadanie_edit', ['kurs_id'=>$olimpiada->id, 'urok_id'=>$olimpiada->id]) }}">
-                                <div class="media">
-                                    <div class="media-body">
-                                      <h3 class="dropdown-item-title pt-2 pb-2">
-                                        <div class="row">
-                                          <div class="col">
-                                            Редактировать
-                                          </div>
-                                          <div class="col-auto">
-                                            <i class="far fa-edit btn btn-tool pb-2" style="font-size: 15px;"></i>
-                                          </div>
-                                        </div>
-                                      </h3>
-                                    </div>
-                                  </div>
-                              </a>
-                              <div class="dropdown-divider  mb-0 mt-0"></div>
-                              <a class="dropdown-item w-100111 for_modal_delete2" type="button" data-toggle="modal" data-target="#staticBackdrop2" data-title="{{ $olimpiada->title }}" data-id2="{{route('moderator_kurs_urok_zadanie_destroy', ['id'=>$olimpiada->id])}}">
-                                <div class="media">
-                                    <div class="media-body">
-                                      <h3 class="dropdown-item-title pt-2 pb-2">
-                                        <div class="row">
-                                          <div class="col">
-                                            Удалить
-                                          </div>
-                                          <div class="col-auto">
-                                            <i class="fas fa-trash btn btn-tool pb-2" style="font-size: 15px;"></i>
-                                          </div>
-                                        </div>
-                                      </h3>
-                                    </div>
-                                  </div>
-                              </a>
-                            </div>
-                            <!-- dropdown-menu -->
-                          </div>
-                          @endif
-
-                          <div class="col-auto tools2 for_num_id1">
-                                <div class="col-auto tools2 for_num_id1 dropup">
-                                  <a class="btn btn-tool" role="button" data-toggle="dropdown" id="dropdownMenuOffset22{{$loop->iteration}}" type="button"  data-offset="120,0">
-                                    <span style="font-size: 1.2em;" title="Тест">
-                                        <i class="fas fa-spell-check" @if($olimpiada->test_id != null) style="color: #28a745;" @endif></i>
-                                      </span>
-                                  </a>
-                                  <!-- dropdown-menu -->
-                                  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right pt-0 pb-0 keep_open">
-                                    <p class="h3 dropdown-item-title text-center pt-2 pb-2 pr-2 pl-2">Тест: 
-                                      <small>
-                                        @if($olimpiada->test_id != null)
-                                          {{$olimpiada->title}}
-                                        @else
-                                          жок
-                                        @endif
-                                      </small> 
-                                    </p>
-
-                                    <div class="dropdown-divider mb-0 mt-0"></div>
-                                    @if($olimpiada->test_id == null)
-                                      <a class="dropdown-item" href="{{ route('moderator_kurs_urok_tests_create', ['kurs_id'=>$olimpiada->id, 'urok_id'=>$olimpiada->id]) }}">
-                                    @else
-                                      @if($olimpiada->test_id == null)
-                                        <a class="dropdown-item" href="{{ route('moderator_kurs_urok_tests_edit', ['kurs_id'=>$olimpiada->id, 'urok_id'=>$olimpiada->id]) }}">
-                                      @else
-                                        <a class="dropdown-item for_modal_delete4" type="button" data-toggle="modal" data-target="#staticBackdrop4" data-title="{{ $olimpiada->title }}" data-id2="{{route('moderator_olimpiada_tury_tests_vybrate', ['olimpiada_tury_id'=>$olimpiada->id])}}">
-                                      @endif
-                                    @endif
-                                      <div class="media">
-                                          <div class="media-body">
-                                            <h3 class="dropdown-item-title pt-2 pb-2">
-                                              <div class="row">
-                                                @if($olimpiada->test_id == null)
-                                                <div class="col">Создать</div>
-                                                <div class="col-auto"><i class="fas fa-plus btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                @else
-                                                  @if($olimpiada->test_id == null)
-                                                    <div class="col">Редактировать</div>
-                                                    <div class="col-auto"><i class="far fa-edit btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                  @else
-                                                    <div class="col">Изменить</div>
-                                                    <div class="col-auto"><i class="fas fa-angle-left btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                  @endif
-                                                @endif
-                                              </div>
-                                            </h3>
-                                          </div>
-                                        </div>
-                                    </a>
-                                    <div class="dropdown-divider  mb-0 mt-0"></div>
-                                    @if($olimpiada->test_id == null)
-                                      <a class="dropdown-item for_modal_delete4" type="button" data-toggle="modal" data-target="#staticBackdrop4" data-title="{{ $olimpiada->title }}" data-id2="{{route('moderator_olimpiada_tury_tests_vybrate', ['olimpiada_tury_id'=>$olimpiada->id])}}">
-                                    @else
-                                      @if($olimpiada->test_id == null)
-                                        <a class="dropdown-item w-100111 for_modal_delete3" type="button" data-toggle="modal" data-target="#staticBackdrop3" data-title="{{ $olimpiada->title }}" data-id2="{{route('moderator_kurs_urok_tests_destroy', ['kurs_id'=>$olimpiada->id, 'urok_id'=>$olimpiada->id, 'test_id'=>$olimpiada->id])}}">
-                                      @else
-                                        <a class="dropdown-item for_modal_delete5" type="button" data-toggle="modal" data-target="#staticBackdrop5" data-title="{{ $olimpiada->title }}" data-title55="{{ $olimpiada->title }}" data-id2="{{route('moderator_olimpiada_tury_tests_izyat', ['olimpiada_tury_id'=>$olimpiada->id])}}">
-                                      @endif
-                                    @endif
-                                      <div class="media">
-                                          <div class="media-body">
-                                            <h3 class="dropdown-item-title pt-2 pb-2">
-                                              <div class="row">
-                                                @if($olimpiada->test_id == null)
-                                                  <div class="col">Выбрать</div>
-                                                  <div class="col-auto"><i class="fas fa-angle-left btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                @else
-                                                  @if($olimpiada->test_id == null)
-                                                    <div class="col">Удалить</div>
-                                                    <div class="col-auto"><i class="fas fa-trash btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                  @else
-                                                    <div class="col">Изъять</div>
-                                                    <div class="col-auto"><i class="fas fa-exchange-alt btn btn-tool pb-2" style="font-size: 15px;"></i></div>
-                                                  @endif
-                                                @endif
-                                              </div>
-                                            </h3>
-                                          </div>
-                                        </div>
-                                    </a>
-                                  </div>
-                                  <!-- dropdown-menu -->
-                                </div>
-                                
-
-
-
-
-                          </div>   
+                          </div> 
                           <div class="col-auto tools2 for_num_id1"> 
                                 <a class="btn btn-tool" href="{{ route('moderator_olimpiada_tury_edit', ['olimpiada_id'=>$olimpiada01->id, 'olimpiada_tury_id'=>$olimpiada->id]) }}">
                                   <span style="font-size: 1.2em;" title="Редактировать">
@@ -383,56 +235,6 @@
                                 </a>
                           </div>-->
                         </div>
-                    </div>
-                  </div>
-                  <div id="collapse{{$loop->iteration}}" class="collapse" style="">
-                    @php
-                      $test_time = $test->where('id', $olimpiada->test_id)->first();
-                      $test_time_proverka = $olimpiada->data_okonchanie_tura - $olimpiada->nachalo_zdachi_tura;
-                      $for_time = $olimpiada->nachalo_zdachi_tura + $test_time->time;
-                    @endphp                
-                    <div class="card-body pt-0 pl-2 pr-2 pb-2">
-                      <div class="row align-items-center pl-2 pr-2">
-                        <div class="col border two2 hover1" style="border-radius: 4px;">
-                          <div class="row align-items-center">
-                                <div class="col-md-6">
-                                  <div class="user-block">
-                                    <span class="pl-1 pr-1"><small>{{$olimpiada->tur_number}}-турдун узактыгы</small></span>
-                                    <span class="description ml-0 pl-1 pr-1">
-                                      <small>
-                                        @if($test_time_proverka > $test_time->time)
-                                          ({{date('d-m-Y / H:i', $olimpiada->data_okonchanie_tura)}} соңуна чыгат)
-                                        @else
-                                          ({{date('d-m-Y / H:i', $for_time)}} соңуна чыгат)
-                                        @endif
-                                      </small>
-                                    </span>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                  <div class="form-group mb-0 required align-items-top">
-                                    <div class="row align-items-top hover1">
-                                      <div class="col-auto pr-0">
-                                        <p class="form-control form-control-border color1 pr-1 pl-1 pt-2 pb-0 mb-0"><i class="fas fa-calendar pl-0 pr-1 btn-tool"></i></p>
-                                      </div>
-                                      <div class="col pl-0">
-                                        <form method="POST" action="{{route('moderator_olimpiada_tury_update_data_okonchanie_tura_1', ['olimpiada_id'=>$olimpiada01->id, 'olimpiada_tury_id'=>$olimpiada->id])}}"  class="needs-validation" novalidate id="form{{$olimpiada->id}}">
-                                          @csrf
-                                          @method('PUT')
-                                          <input name="data_okonchanie_tura" @if($test_time_proverka > $test_time->time) value="{{date('d/m/Y  (H:i)', $olimpiada->data_okonchanie_tura)}}" @else value="{{date('d/m/Y  (H:i)', $for_time)}}" @endif class="form-control color1 form-control-border  pr-1 pl-1 pt-2 pb-1" type="text" data-inputmask='"mask": "99/99/9999  (99:99)"' data-mask placeholder="25/05/2025  (16:00)" required="true">
-                                          <span class="res"></span>
-                                          <div class="invalid-feedback">{{$olimpiada->tur_number}}-турдун бүтүү датасын көрсөтүңүз!</div>
-                                        </form> 
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-auto">
-                                  <button type="button" id="customSwitch2{{$loop->iteration}}" class="btn btn-outline-info btn-sm pt-1 pb-1">Сактоо <i class="far fa-arrow-right pl-2 pt-1"></i></button>
-                                </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

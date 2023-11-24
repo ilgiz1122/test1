@@ -13,4 +13,9 @@ class Klassy extends Model
     {
         return $this->hasMany('App\Models\Olimpiada', 'klass');
     }
+
+    public function olimpiada_tury_class()
+    {
+        return $this->hasMany('App\Models\OlimpiadaTuryKlass', 'klassy_id');
+    }
 }
