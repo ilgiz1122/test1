@@ -226,15 +226,9 @@ class OlimpiadaTuryController extends Controller
     public function moderator_olimpiada_tury_update_data_okonchanie_tura_1 ($olimpiada_id, $olimpiada_tury_id, Request $request)
     {
         $olimpiada = Olimpiada::where('id', $olimpiada_id)->where('user_id', \Auth::user()->id)->first();
-        $olimpiada_tury = Olimpiada_tury::where('id', $olimpiada_tury_id)->where('olimpiada_id', $olimpiada->id)->first();
+        $olimpiada_tury = OlimpiadaTuryKlassPredmety::where('id', $olimpiada_tury_id)->where('olimpiada_id', $olimpiada->id)->first();
 
         if ($olimpiada_tury != null) {
-            
-            $test = Test::where('id', $olimpiada_tury->test_id)->first();
-
-            $data_okonchanie_tura22 = $olimpiada_tury->nachalo_zdachi_tura + $test->time;
-
-
             $data_okonchanie_tura2 = preg_replace('~[^0-9]+~','', $request->data_okonchanie_tura);
 
             $kun1 = substr($data_okonchanie_tura2, 0, -10);
@@ -246,15 +240,11 @@ class OlimpiadaTuryController extends Controller
             $data_num3 = $god1.'-'.$ai1.'-'.$kun1.' '.$saat1.':'.$minuta1.':'.'00';
             $data_num = strtotime($data_num3);
 
-            if ($data_num < $data_okonchanie_tura22) {
-                return redirect()->route('moderator_olimpiada_tury_index', $olimpiada_id)->withSuccess2('Турдун аяктоо убактысына, анын башталуу убактысына тесттин убактысын кошкондон чоң болуусу керек');
-            }else{
-                DB::table('olimpiada_turies')->where('id', $olimpiada_tury_id)->update([
-                    'data_okonchanie_tura' => $data_num,
-                ]);
-
-                return redirect()->route('moderator_olimpiada_tury_index', $olimpiada_id)->withSuccess('Турдун убактысы өзгөртүлдү');
-            }
+            $olimpiada_tury->update([
+                'star' => $data_num,
+            ]);
+            return redirect()->back()->withSuccess('Турдун убактысы өзгөртүлдү');
+            
         }else{
             return redirect()->back()->withSuccess('Хотель схитрить!');
         }

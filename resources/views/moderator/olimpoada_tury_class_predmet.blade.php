@@ -336,7 +336,7 @@
                                     <span class="pl-1 pr-1"><small>{{$olimpiada_tury->tur_number}}-турдун узактыгы</small></span>
                                     <span class="description ml-0 pl-1 pr-1">
                                       <small>
-                                          ({{date('d-m-Y / H:i', $olimpiada_tury_class_predmet->end)}} соңуна чыгат)
+                                          ({{date('d-m-Y / H:i', $olimpiada_tury_class_predmet->end)}} башталат)
                                       </small>
                                     </span>
                                   </div>
@@ -348,12 +348,12 @@
                                         <p class="form-control form-control-border color1 pr-1 pl-1 pt-2 pb-0 mb-0"><i class="fas fa-calendar pl-0 pr-1 btn-tool"></i></p>
                                       </div>
                                       <div class="col pl-0">
-                                        <form method="POST" action="{{route('moderator_olimpiada_tury_update_data_okonchanie_tura_1', ['olimpiada_id'=>$olimpiada->id, 'olimpiada_tury_id'=>$olimpiada->id])}}"  class="needs-validation" novalidate id="form{{$olimpiada->id}}">
+                                        <form method="POST" action="{{route('moderator_olimpiada_tury_update_data_okonchanie_tura_1', ['olimpiada_id'=>$olimpiada->id, 'olimpiada_tury_id'=>$olimpiada_tury_class_predmet->id])}}"  class="needs-validation" novalidate id="form{{$olimpiada_tury_class_predmet->id}}">
                                           @csrf
                                           @method('PUT')
                                           <input name="data_okonchanie_tura" value="{{date('d/m/Y  (H:i)', $olimpiada_tury_class_predmet->end)}}" class="form-control color1 form-control-border  pr-1 pl-1 pt-2 pb-1" type="text" data-inputmask='"mask": "99/99/9999  (99:99)"' data-mask placeholder="25/05/2025  (16:00)" required="true">
                                           <span class="res"></span>
-                                          <div class="invalid-feedback">{{$olimpiada_tury->tur_number}}-турдун бүтүү датасын көрсөтүңүз!</div>
+                                          <div class="invalid-feedback">{{$olimpiada_tury->tur_number}}-турдун башталуу датасын көрсөтүңүз!</div>
                                         </form> 
                                       </div>
                                     </div>
